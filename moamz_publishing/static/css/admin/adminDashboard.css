@@ -1,0 +1,281 @@
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<헤더+네비바>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+body{
+    width: 100%;
+    height: 100vh;
+}
+/* a 태그 기본 스타일 제거 */
+a {
+    color: inherit; /* 링크 색상 제거 */
+    text-decoration: none; /* 밑줄 제거 */
+    background: none; /* 배경색 제거 */
+    outline: none; /* 포커스시 나타나는 외곽선 제거 */
+}
+
+
+/* 메인 컨테이너 */
+.main-container {
+    width: 1000px;
+    height: 664px;
+    margin: 0 auto;
+    background-color: #1B494C;
+    box-shadow: 0px 2.49px 7.18px rgba(0, 0, 0, 0.16); 
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 헤더 */
+.main-container header{
+    height: 10%;
+    background-color: #ffffff;
+    /*justify-content: space-around;/*로고와 로그아웃버튼 양쪽 분리*/
+    align-items: center;/* 높이를 맞춰 중앙 정렬 */
+    box-shadow: 0px 2.49px 7.18px rgba(0, 0, 0, 0.16);  
+
+    position: relative;
+}
+/* 로고 + 타이틀 */
+.main-container header .admin-logo{
+    display: flex;
+    align-items: center; /* 로고이미지와 타이틀 높이 맞춰 중앙 정렬*/
+
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+/* 로고 이미지 */
+.main-container header .admin-logo img{
+    width: 29px;
+    margin-right: 3px;
+}
+/* 타이틀 : 관리자 전용 사이트 */
+.main-container header .admin-logo div{
+    color: #0B3051; /* span 안되서 div로 변경함💥*/
+    font-weight: bold;/* 안먹힘 💥*/
+    font-size: 14.96px;
+}
+/* 나가기 버튼 box */
+.main-container header .admin-logout__btn{
+    width: 35px;
+    height: 18px;
+    border: 1px solid #0B3051;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    left:950px;
+    top: 18px;
+}
+/* 나가기 폰트 */
+.main-container header .admin-logout__btn a{
+    font-size: 10px; 
+    color:#0B3051;
+}
+
+
+
+/* 좌측 네비바 */
+.main-container nav{
+    width: 15%;
+    height: auto; /* 높이를 컨텐츠에 맞춤 */
+    background-color: #ffffff;
+    padding: 9.58px 19px 405px 19px;
+}
+/* 네비바 전체 */
+.main-container nav ul{
+    padding-top: 17px;
+    padding-left: 13px;
+
+    /* li들간에 위아래 간격 9px주기 */
+    display: flex;
+    flex-direction: column;
+    gap:9px
+}
+.main-container nav ul li{
+    display: flex;
+    height: 26px;
+    align-items: center ;
+}
+.main-container nav ul li .nav-logo{
+    margin-right: 11.76px;
+}
+.main-container nav ul li .nav-title{
+
+}
+.main-container nav ul li .nav-logo img{
+    width: 14px;
+}
+.main-container nav ul li .nav-title a{
+    font-size: 12px;
+    color: #5D7285;
+}
+/* 대쉬보드 선택일떄 (선택인 카테고리로 바꿔주기) */
+.main-container nav ul li:first-child{
+    background-color: #F0F6FF;
+    width: 151px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* 네비바+메인화면의 부모인 main */
+main{
+    display: flex;
+}
+/* 타이틀 + 카운팅카드뷰 + 에코프젝 + 그래프의 부모 */
+main .content-box{
+    display: flex;
+    flex-direction: column;
+}
+/* 타이틀 */
+main .content-box .page-title-box{
+    margin-left: 33px;
+    margin-top: 15px;
+}
+main .content-box .page-title-box .page-title{
+    font-size: 20px;
+    color: #ffffff;
+}
+/* 카운팅 카드뷰 */
+main .content-box .count-card-wrap{
+    display: flex;
+    margin: 44px 0px 44px 30px;
+}
+/* 카운팅 카드뷰 묶음*/
+main .content-box .count-card-wrap .count-card-box{
+    display: flex;
+    gap: 22px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* 카운팅 카드뷰 1개 */
+main .content-box .count-card-wrap .count-card-box .count-card{
+    width: 172.84px;
+    height: 35.91px;
+    background-color: white;
+
+    font-size: 10px;
+    color: #4D5E80;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+}
+/* 카드뷰 제목 */
+main .content-box .count-card-wrap .count-card-box .count-card .count-card__title{
+    margin-left: 10px;
+}
+/* 카드뷰 값 */
+main .content-box .count-card-wrap .count-card-box .count-card .count-card__value{
+    margin-right: 10px;
+}
+/* 동그라미 시도함 */
+/* main .content-box .count-card-wrap .count-card-box .count-card .count-card .circle{
+    width: 10px;
+    height: 10px;
+    color: black;
+    border:1px solid black;
+    border-radius: 50%;
+} */
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* 에코프로젝트 배너바 */
+
+/* 배너 2개를 감싸는 전체 */
+main .content-box .ecobanner-card-box{
+    display: flex;
+    margin-left: 30px;
+    gap: 25px;
+}
+/* 배너 1개당 설정값 */
+main .content-box .ecobanner-card-box .ecobanner-card{
+    width: 364px;
+    height: 175px;
+    background-color: white;
+    /* 에코글과 top5리스트 분리 */
+     display: flex;
+}
+
+main .content-box .ecobanner-card-box .ecobanner-card .eco-article{
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+    margin-left:15px;
+}
+
+/* eco project */
+main .content-box .ecobanner-card-box .ecobanner-card .eco-article .subject{
+    font-size: 8.23px;
+    font-weight: bold;
+    color: #ADB8CC;
+}
+/* 프젝 제목 */
+main .content-box .ecobanner-card-box .ecobanner-card .eco-article .title{
+    font-size: 12.34px;
+    font-weight: bold;
+    color:#4D5E80;
+}
+/* 좋아요와 참여가능표시 래퍼 */
+main .content-box .ecobanner-card-box .ecobanner-card .eco-article .like-and-sticker-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 프젝 기간, 좋아요수*/
+main .content-box .ecobanner-card-box .ecobanner-card .eco-article .period,.like{
+    font-size: 10.28px;
+    color:#4D5E80;
+
+    display: flex;
+    flex-direction: row;
+    gap:4.74px;
+}
+/* 프젝기간, 좋아요 수 이모티콘 */
+main .content-box .ecobanner-card-box .ecobanner-card .eco-article .period img,.like img{
+    width: 12px;
+    height: 12px;
+}
+/* 한번만 참여가능 표시 */
+main .content-box .ecobanner-card-box .ecobanner-card .eco-article .sticker{
+    border: 1px solid #4D5E80;
+    width: 65.82px;
+    height: 18.51px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 10px;
+}
+main .content-box .ecobanner-card-box .ecobanner-card .eco-article .sticker div{
+    font-size: 8.23px;
+    color:#4D5E80;
+}
+
+
+/* top5리스트 중 하나 */
+main .content-box .ecobanner-card-box .ecobanner-card .top-five-list-box{
+    font-size: 12.34px;
+    margin-left: 30px;
+}
+main .content-box .ecobanner-card-box .ecobanner-card .top-five-list-box .top-five-list-title{
+    color:#4D5E80;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+main .content-box .ecobanner-card-box .ecobanner-card .top-five-list-box .top-five-list ul {
+
+}
+main .content-box .ecobanner-card-box .ecobanner-card .top-five-list-box .top-five-list ul li{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}

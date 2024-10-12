@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../static/css/reset.css" />
+    <link rel="stylesheet" href="../../static/css/admin/adminDashboard.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!------<<<<<<<<<<<<<<<<<<<<<<헤더+네비바>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+      <!-- 헤더 -->
+      <header>
+        <!-- 로고&타이틀 -->
+        <div class="admin-logo">
+          <img src="../../static/img/admin/adminLogo.png" alt="admin-logo" />
+          <div>관리자 전용 사이트</div>
+        </div>
+        <!-- 나가기 버튼 -->
+        <div class="admin-logout__btn">
+          <a class="btn-allview" href="#">나가기</a>
+        </div>
+      </header>
+      <!-- 네비바 + 메인화면 -->
+      <main>
+        <!-- 좌측 네비바 -->
+        <nav>
+          <ul>
+            <li>
+              <div class="nav-logo">
+                <img
+                  src="../../static/img/admin/dashboardLogo.png"
+                  alt="dashboardLogo"
+                />
+              </div>
+              <div class="nav-title">
+                <!-- 홈화면인 현재 화면 연결(다른화면에서 사용시 주소 바꿀것) -->
+                <a href="adminDashboard.html">대쉬보드</a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-logo">
+                <img
+                  src="../../static/img/admin/userManage.png"
+                  alt="dashboardLogo"
+                />
+              </div>
+              <div class="nav-title">
+                <!-- 홈화면인 현재 화면 연결(다른화면에서 사용시 주소 바꿀것) -->
+                <a href="#">회원관리</a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-logo">
+                <img
+                  src="../../static/img/admin/noticeBoard.png"
+                  alt="dashboardLogo"
+                />
+              </div>
+              <div class="nav-title">
+                <!-- 홈화면인 현재 화면 연결(다른화면에서 사용시 주소 바꿀것) -->
+                <a href="#">공지사항</a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-logo">
+                <img
+                  src="../../static/img/admin/ecoBoard.png"
+                  alt="dashboardLogo"
+                />
+              </div>
+              <div class="nav-title">
+                <!-- 홈화면인 현재 화면 연결(다른화면에서 사용시 주소 바꿀것) -->
+                <a href="#">에코프로젝트</a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-logo">
+                <img
+                  src="../../static/img/admin/inquiry.png"
+                  alt="dashboardLogo"
+                />
+              </div>
+              <div class="nav-title">
+                <!-- 홈화면인 현재 화면 연결(다른화면에서 사용시 주소 바꿀것) -->
+                <a href="#">문의상담</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!------<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <!-- 우측 녹색 메인 화면-->
+        <div class="content-box">
+          <!-- 타이틀 : dashboard -->
+          <div class="page-title-box">
+            <div class="page-title">Dashboard</div>
+          </div>
+          <!-- 카운팅 카드 뷰 4개 -->
+          <div class="count-card-wrap">
+            <div class="count-card-box">
+              <div class="count-card">
+                <div class="count-card__title">오늘 가입한 회원 수</div>
+                <div class="count-card__value">5</div>
+                <!-- <div class="circle"></div> -->
+              </div>
+              <div class="count-card">
+                <div class="count-card__title">총 회원 수</div>
+                <div class="count-card__value">136</div>
+              </div>
+              <div class="count-card">
+                <div class="count-card__title">오늘 에코프로젝트 인증글 수</div>
+                <div class="count-card__value">3</div>
+              </div>
+              <div class="count-card">
+                <div class="count-card__title">문의글 수</div>
+                <div class="count-card__value">1</div>
+              </div>
+            </div>
+          </div>
+          <!--에코프로젝트 배너 2개  -->
+          <div class="ecobanner-card-box">
+            <!-- 에코프젝배너 -->
+            <div class="ecobanner-card">
+              <!-- 에코프젝 글 -->
+              <div class="ecobanner">
+                <!-- 에코프젝 글 사진 -->
+                <div class="eco-img">
+                  <img
+                    src="../../static/img/admin/bannerImg.png"
+                    alt="bannerImg"
+                  />
+                </div>
+                <!-- 에코프젝 글 내용 -->
+                <div class="eco-article">
+                  <div class="subject">eco project</div>
+                  <div class="title">환경을 위한 플로깅 프로젝트!</div>
+                  <div class="period">
+                    <img
+                      src="../../static/img/admin/calendar.png"
+                      alt="calendar"
+                    />
+                    <div>24/10/10 ~ 24/10/17</div>
+                  </div>
+                  <div class="like-and-sticker-box">
+                    <div class="like">
+                      <img
+                        src="../../static/img/admin/heart.png"
+                        alt="like-btn"
+                      />
+                      <div>22</div>
+                    </div>
+                    <div class="sticker">
+                      <div>한번만 참여 가능</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 인증글 탑5 리스트 -->
+              <div class="top-five-list-box">
+                <!-- 타이틀 -->
+                <div class="top-five-list-title">좋아요 TOP5 참여자</div>
+                <!-- 리스트 -->
+                <div class="top-five-list">
+                  <ul>
+                    <!-- 리스트중 하나 -->
+                    <li>
+                      <div class="num">1</div>
+                      <div class="nickname">닉네임</div>
+                      <div class="like-box">
+                        <div class="like">
+                          <img
+                            src="../../static/img/admin/heart.png"
+                            alt="likeBtn"
+                          />
+                          <div>35</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- 리스트중 하나 -->
+                    <li>
+                      <div class="num">2</div>
+                      <div class="nickname">닉네임</div>
+                      <div class="like-box">
+                        <div class="like">
+                          <img
+                            src="../../static/img/admin/heart.png"
+                            alt="likeBtn"
+                          />
+                          <div>35</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- 리스트중 하나 -->
+                    <li>
+                      <div class="num">3</div>
+                      <div class="nickname">닉네임</div>
+                      <div class="like-box">
+                        <div class="like">
+                          <img
+                            src="../../static/img/admin/heart.png"
+                            alt="likeBtn"
+                          />
+                          <div>35</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- 리스트중 하나 -->
+                    <li>
+                      <div class="num">4</div>
+                      <div class="nickname">닉네임</div>
+                      <div class="like-box">
+                        <div class="like">
+                          <img
+                            src="../../static/img/admin/heart.png"
+                            alt="likeBtn"
+                          />
+                          <div>35</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- 리스트중 하나 -->
+                    <li>
+                      <div class="num">5</div>
+                      <div class="nickname">닉네임</div>
+                      <div class="like-box">
+                        <div class="like">
+                          <img
+                            src="../../static/img/admin/heart.png"
+                            alt="likeBtn"
+                          />
+                          <div>35</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="ecobanner-card">
+              <!-- 에코프젝 글 -->
+              <div class="ecobanner">
+                <!-- 에코프젝 글 사진 -->
+                <div class="eco-img">
+                  <img
+                    src="../../static/img/admin/bannerImg.png"
+                    alt="bannerImg"
+                  />
+                </div>
+                <!-- 에코프젝 글 내용 -->
+                <div class="eco-article">
+                  <div class="subject">eco project</div>
+                  <div class="title">환경을 위한 플로깅 프로젝트!</div>
+                  <div class="period">
+                    <img
+                      src="../../static/img/admin/calendar.png"
+                      alt="calendar"
+                    />
+                    <div>24/10/10 ~ 24/10/17</div>
+                  </div>
+                  <div class="like-and-sticker-box">
+                    <div class="like">
+                      <img
+                        src="../../static/img/admin/heart.png"
+                        alt="like-btn"
+                      />
+                      <div>22</div>
+                    </div>
+                    <div class="sticker">
+                      <div>한번만 참여 가능</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 인증글 탑5 리스트 -->
+              <div class="top-five-list-box">
+                <!-- 타이틀 -->
+                <div class="top-five-list-title">좋아요 TOP5 참여자</div>
+                <!-- 리스트 -->
+                <div class="top-five-list">
+                  <ul>
+                    <!-- 리스트중 하나 -->
+                    <li>
+                      <div class="num">1</div>
+                      <div class="nickname">닉네임</div>
+                      <div class="like-box">
+                        <div class="like">
+                          <img
+                            src="../../static/img/admin/heart.png"
+                            alt="likeBtn"
+                          />
+                          <div>35</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- 리스트중 하나 -->
+                    <li>
+                      <div class="num">2</div>
+                      <div class="nickname">닉네임</div>
+                      <div class="like-box">
+                        <div class="like">
+                          <img
+                            src="../../static/img/admin/heart.png"
+                            alt="likeBtn"
+                          />
+                          <div>35</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- 리스트중 하나 -->
+                    <li>
+                      <div class="num">3</div>
+                      <div class="nickname">닉네임</div>
+                      <div class="like-box">
+                        <div class="like">
+                          <img
+                            src="../../static/img/admin/heart.png"
+                            alt="likeBtn"
+                          />
+                          <div>35</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- 리스트중 하나 -->
+                    <li>
+                      <div class="num">4</div>
+                      <div class="nickname">닉네임</div>
+                      <div class="like-box">
+                        <div class="like">
+                          <img
+                            src="../../static/img/admin/heart.png"
+                            alt="likeBtn"
+                          />
+                          <div>35</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- 리스트중 하나 -->
+                    <li>
+                      <div class="num">5</div>
+                      <div class="nickname">닉네임</div>
+                      <div class="like-box">
+                        <div class="like">
+                          <img
+                            src="../../static/img/admin/heart.png"
+                            alt="likeBtn"
+                          />
+                          <div>35</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
