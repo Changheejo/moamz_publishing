@@ -159,6 +159,7 @@ main {
     justify-content: center;
     background-color: #fff;
     box-shadow: 0 2px 5px #dddddddd;
+    cursor: pointer;
 }
 .sharing-card-view img {
     width: 100%;
