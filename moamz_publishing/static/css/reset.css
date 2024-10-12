@@ -144,6 +144,13 @@ video {
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff2');
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('opentype');
 }
+@font-face {
+  font-family: 'Pretendard Variable';
+  font-weight: 100 200 300 400 500 600 900;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/PretendardVariable.woff2') format('woff2-variations');
+}
 
 body,
 h1,
@@ -163,7 +170,9 @@ main,
 a,
 select,
 option {
-  font-family: 'Pretendard-Regular', sans-serif;
+  /* font-family: 'Pretendard-Regular', sans-serif; */
+  font-family: 'Pretendard Variable', sans-serif;
+  font-weight: 400;
 }
 
 /* HTML5 display-role reset for older browsers */
