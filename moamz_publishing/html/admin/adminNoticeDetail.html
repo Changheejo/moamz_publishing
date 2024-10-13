@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../static/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="../../static/css/admin/adminNoticeDetail.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <!------<<<<<<<<<<<<<<<<<<<<<<헤더+네비바>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+      <!-- 헤더 -->
+      <header>
+        <!-- 로고&타이틀 -->
+        <div class="admin-logo">
+          <img src="../../static/img/admin/adminLogo.png" alt="admin-logo" />
+          <div>관리자 전용 사이트</div>
+        </div>
+        <!-- 나가기 버튼 -->
+        <div class="admin-logout__btn">
+          <a class="btn-allview" href="#">나가기</a>
+        </div>
+      </header>
+      <!-- 네비바 + 메인화면 -->
+      <main>
+        <!-- 좌측 네비바 -->
+        <nav>
+          <ul>
+            <li>
+              <div class="nav-logo">
+                <img
+                  src="../../static/img/admin/dashboardLogo.png"
+                  alt="dashboardLogo"
+                />
+              </div>
+              <div class="nav-title">
+                <!-- 홈화면인 현재 화면 연결(다른화면에서 사용시 주소 바꿀것) -->
+                <a href="adminDashboard.html">대쉬보드</a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-logo">
+                <img
+                  src="../../static/img/admin/userManage.png"
+                  alt="dashboardLogo"
+                />
+              </div>
+              <div class="nav-title">
+                <!-- 홈화면인 현재 화면 연결(다른화면에서 사용시 주소 바꿀것) -->
+                <a href="#">회원관리</a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-logo">
+                <img
+                  src="../../static/img/admin/noticeBoard.png"
+                  alt="dashboardLogo"
+                />
+              </div>
+              <div class="nav-title">
+                <!-- 홈화면인 현재 화면 연결(다른화면에서 사용시 주소 바꿀것) -->
+                <a href="#">공지사항</a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-logo">
+                <img
+                  src="../../static/img/admin/ecoBoard.png"
+                  alt="dashboardLogo"
+                />
+              </div>
+              <div class="nav-title">
+                <!-- 홈화면인 현재 화면 연결(다른화면에서 사용시 주소 바꿀것) -->
+                <a href="#">에코프로젝트</a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-logo">
+                <img
+                  src="../../static/img/admin/inquiry.png"
+                  alt="dashboardLogo"
+                />
+              </div>
+              <div class="nav-title">
+                <!-- 홈화면인 현재 화면 연결(다른화면에서 사용시 주소 바꿀것) -->
+                <a href="#">문의상담</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!------<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <!-- 우측 녹색 메인 화면-->
+        <div class="content-box">
+          <!-- 타이틀 : dashboard -->
+          <div class="page-title-box">
+            <div class="page-title">공지사항</div>
+          </div>
+          <!-- 흰색 게시판 전체 -->
+          <div class="content">
+            <div class="content-title-box">
+              <div class="content-title">
+                [ 공지 ] 시스템 점검 1.0.0.1 완료되었습니다.
+              </div>
+              <div class="content-info">
+                <div class="writer">관리자</div>
+                <div class="text-box">
+                  <div class="write-date">작성일</div>
+                  <div class="write-date-value">24/10/04 23:53</div>
+                </div>
+                <div class="text-box">
+                  <div class="view">조회수</div>
+                  <div class="view-value">10</div>
+                </div>
+                <div class="btn-wrapper">
+                  <button class="btn">
+                    <img
+                      src="../../static/img/admin/edit.png"
+                      alt="modifyButton"
+                    />
+                    수정
+                  </button>
+                  <button class="btn">
+                    <img
+                      src="../../static/img/admin/trashcan.png"
+                      alt="deleteButton"
+                    />
+                    삭제
+                  </button>
+                  <button class="btn">목록으로 가기</button>
+                </div>
+              </div>
+            </div>
+            <div class=" content-detail-box">
+                <p>
+                    동해물과백두산이
+                </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

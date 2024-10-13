@@ -114,7 +114,7 @@ a {
     color: #5D7285;
 }
 /* 대쉬보드 선택일떄 (선택인 카테고리로 바꿔주기) */
-.main-container nav ul li:nth-child(2){
+.main-container nav ul li:nth-child(3){
     background-color: #F0F6FF;
     width: 151px;
 }
@@ -152,34 +152,23 @@ button{
     cursor: pointer;       /* 마우스를 올리면 클릭 커서가 나타나도록 설정 */
     outline: none;         /* 포커스시 나타나는 외곽선 제거 */
 }
-/* 검색창 */
-.search-input{
+/* 글작성하기 버튼 테두리 */
+.write-btn{
     position: relative;
-    width: 223.35px;
+    width: 83px;
     position: absolute;
-    left:67%;
-    top: 3%
+    left:85%;
+    top: 3%;
+    background-color: #6A6A6A;
+    border-radius: 3px;
 }
-.search-input input{
+/* 글작성하기 버튼 */
+.write-btn button{
    width: 100%;
     padding: 1px;
-
-}
-/* 검색창 placeholder 디자인 */
-.search-input input::placeholder{
     font-size: 10px;
-    color:#c5bdbd;
-    padding-left:10px;
-}
-/* 검색창 아이콘 */
-.search-input .icon{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 1px;
-    top: 50%;
-    transform: translateY(-90%);/*해당 요소를 자신의 높이의 50%만큰 위로 수직 이동시킴*/
-
+    color:#FFFFFFFF;
+    transform: translateY(-13%);
 }
 /* 흰색 게시판 전체 */
 .content{
@@ -192,40 +181,13 @@ button{
     margin-top: 20px;
 
 }
-/* 토글버튼 css */
-.toggle-btn-container{
-    padding: 8px;
-    padding-left: 20px;
-
-}
-.toggle-btn-container button{
-    margin-right: 10px;
-}
-.toggle-btn-container{
-
-}
-.toggle-btn-container button{
-    color:#6A6A6A;
-    font-size: 12px;
-}
-/* 버튼 활성화 : .active-btn 클래스 붙었을 때 */
-.toggle-btn-container button.active-btn{
-    color: black;
-    font-weight: bold;
-    border-bottom: 3px solid black;
-    padding-bottom: 3px;
-}
-
 /* 테이블 css */
 table {
     width: 100%;
     border-collapse: collapse;/* 테두리 겹치기 */
 }
-.table-hidden{
-    display: none;
-}
 th, td {
-    padding: 7px;
+    padding: 8px;
     text-align: center;
     border-bottom: 1px solid #ddd;
     font-size: 10px;
@@ -236,6 +198,18 @@ th {
     background-color: black;
     padding:10px;
 }
+td img{
+    width: 15px;
+    transform: translateY(30%);
+}
+tr:hover {
+    background-color: #f5f5f5;
+    cursor:pointer; /*커서를 손모양으로 변경*/
+}
+.gray-text{
+    color:#6A6A6A;
+}
+
 /* 페이지네이션 css */
 .pagination{
     position: absolute;

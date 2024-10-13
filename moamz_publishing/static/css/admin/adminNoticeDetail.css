@@ -103,9 +103,6 @@ a {
 .main-container nav ul li .nav-logo{
     margin-right: 11.76px;
 }
-.main-container nav ul li .nav-title{
-
-}
 .main-container nav ul li .nav-logo img{
     width: 14px;
 }
@@ -114,7 +111,7 @@ a {
     color: #5D7285;
 }
 /* 대쉬보드 선택일떄 (선택인 카테고리로 바꿔주기) */
-.main-container nav ul li:nth-child(2){
+.main-container nav ul li:nth-child(3){
     background-color: #F0F6FF;
     width: 151px;
 }
@@ -152,109 +149,79 @@ button{
     cursor: pointer;       /* 마우스를 올리면 클릭 커서가 나타나도록 설정 */
     outline: none;         /* 포커스시 나타나는 외곽선 제거 */
 }
-/* 검색창 */
-.search-input{
-    position: relative;
-    width: 223.35px;
-    position: absolute;
-    left:67%;
-    top: 3%
-}
-.search-input input{
-   width: 100%;
-    padding: 1px;
 
-}
-/* 검색창 placeholder 디자인 */
-.search-input input::placeholder{
-    font-size: 10px;
-    color:#c5bdbd;
-    padding-left:10px;
-}
-/* 검색창 아이콘 */
-.search-input .icon{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 1px;
-    top: 50%;
-    transform: translateY(-90%);/*해당 요소를 자신의 높이의 50%만큰 위로 수직 이동시킴*/
 
-}
+
 /* 흰색 게시판 전체 */
 .content{
-    width: 736px;
-    height: 506px;
+    width: 650px;
+    height: 598px;
     background-color: #FFFFFF;
 
-    margin-right: 35px;
-    margin-left: 38px;
-    margin-top: 20px;
-
-}
-/* 토글버튼 css */
-.toggle-btn-container{
-    padding: 8px;
-    padding-left: 20px;
-
-}
-.toggle-btn-container button{
-    margin-right: 10px;
-}
-.toggle-btn-container{
-
-}
-.toggle-btn-container button{
-    color:#6A6A6A;
-    font-size: 12px;
-}
-/* 버튼 활성화 : .active-btn 클래스 붙었을 때 */
-.toggle-btn-container button.active-btn{
-    color: black;
-    font-weight: bold;
-    border-bottom: 3px solid black;
-    padding-bottom: 3px;
-}
-
-/* 테이블 css */
-table {
-    width: 100%;
-    border-collapse: collapse;/* 테두리 겹치기 */
-}
-.table-hidden{
-    display: none;
-}
-th, td {
-    padding: 7px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-    font-size: 10px;
-    box-sizing: border-box; /*패딩 및 테두리 크기 포함*/
-}
-th {
-    color:#FFFFFF;
-    background-color: black;
-    padding:10px;
-}
-/* 페이지네이션 css */
-.pagination{
     position: absolute;
-    right: 42%;
-    bottom: 9%;
+    left: 162px;
+    bottom:-0px;
 }
-.page{
+/* 공지사항 제목 부분 */
+.content-title-box{
+    width: 94%;
+    height: 30px;
+    border-top: 1px solid #d7d4d4;
+    border-bottom: 1px solid #d7d4d4;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.content-title{
+    font: 15px;
+    font-weight: bold; /*💥적용 안되서 다시 체크하기*/
     color: black;
-    font-size: 7px;
-    /* border: 1px solid black; */
-    padding: 2px 5px;
-    border-radius: 4px;
-    background-color: #E0E0E0;
+    margin-bottom: 10px;
 }
-.pagination .active{
-    color: #ffffff;
-    background-color: #30595C;
+.content-info{
+    display: flex;
+    font-size: 12px;
+    color:#6A6A6A;
+    gap: 20px;
+    align-items: center;
 }
-.prev, .next{
-    font-size: 7px;
-    color: #9E9E9E;
+.content-info .writer{
+    font-weight: bold;/*적용 안되서 다시 체크하기*/
+}
+.content-info .text-box{
+    display: flex;
+    gap:3px;
+}
+.content-info .btn-wrapper{
+    position: absolute;
+    right: 10px;  /* 우측 끝으로 이동 */
+    top: 9%;     /* 수직 중앙 정렬*/
+    transform: translateY(-50%);  /* 정확한 수직 중앙 정렬 */
+}
+.content-info .btn{
+    border: 1px solid #5D7285;
+    border-radius: 3px;
+    padding: 2px;
+    
+}
+.content-info .btn img{
+    width: 25%;
+}
+.content-info button{
+    font-size: 10px;
+    color: #5D7285;
+}
+/* 공지사항 내용 부분 */
+.content-detail-box{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    font-size: 12px;
+    height: 80%;
+}
+.content-detail-box p{
+    width: 100%;
+    height:85%;
+    border-bottom: 1px solid #d7d4d4;
 }
