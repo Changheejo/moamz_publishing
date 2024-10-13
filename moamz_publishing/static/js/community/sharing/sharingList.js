@@ -5,6 +5,7 @@ const availableList = document.getElementById('sharing-available-list');
 const reservedList = document.getElementById('sharing-reserved-list');
 const completedList = document.getElementById('sharing-completed-list');
 
+// 나눔가능 버튼 눌렀을 떄
 availableBtn.addEventListener('click', () => {
     availableBtn.classList.add('active');
     reservedBtn.classList.remove('active');
@@ -14,6 +15,7 @@ availableBtn.addEventListener('click', () => {
     completedList.classList.add('hidden');
 });
 
+// 예약중 버튼 눌렀을 때
 reservedBtn.addEventListener('click', () => {
     availableBtn.classList.remove('active');
     reservedBtn.classList.add('active');
@@ -23,6 +25,7 @@ reservedBtn.addEventListener('click', () => {
     completedList.classList.add('hidden');
 });
 
+// 나눔완료 버튼 눌렀을 때
 completedBtn.addEventListener('click', () => {
     availableBtn.classList.remove('active');
     reservedBtn.classList.remove('active');

@@ -12,6 +12,7 @@
     <header></header>
     <main>
         <!-- 상단 이미지 영역 -->
+        <!-- ✅여기 그냥 빼자고 건의.. -->
         <!-- <div class="top-img">
             <img src="../../../static/img/community/sharing/sharing_product.jpg" alt="나눔상세_상단이미지">
         </div> -->
@@ -32,10 +33,12 @@
                         <span id="post-view-count">10</span>
                     </div>
                     <div class="btn-wrap">
-                        <div class="btn-writer">
-                            <img src="../../../static/img/community/chatToWriter.png" alt="작성자와_채팅하기">
-                        </div>
+                        <!-- 다른 사람이 쓴 글일 때 버튼 -->
                         <div class="btn-others">
+                            <img src="../../../static/img/community/chatToWriter.png" alt="작성자와_채팅하기" class="chat-to-writer-btn">
+                        </div>
+                        <!-- 내가 쓴 글일 때 보이는 버튼 -->
+                        <div class="btn-writer">
                             <button type="button" id="modify-btn" onclick="location.href='sharingModify.html'">수정</button>
                             <button type="button" id="delete-btn">삭제</button>
                         </div>
