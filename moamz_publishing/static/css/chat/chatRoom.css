@@ -1,7 +1,4 @@
 *{
-    font-family: "Pretendard Variable";
-    margin: 0;
-    padding: 0;
     color: #6a6a6a;
 }
 body {
@@ -54,6 +51,7 @@ main {
 /* 채팅방 내용 부분 */
 .chat-room-content {
     padding: 20px 0;
+    min-height: 500px;
     max-height: 500px;
     /* 자동스크롤 */
     overflow-y: auto;
@@ -66,6 +64,16 @@ main {
     flex-direction: column;
     margin-bottom: 20px;
 }
+.message-wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.message-time {
+    font-size: 0.75em;
+    color: #999;
+}
+
 /* 받은메시지 */
 .chat-sender {
     font-size:16px;
@@ -81,10 +89,12 @@ main {
     padding: 10px;
     border-radius: 10px;
     max-width: 400px;
+    margin-right: 5px;
 }
 /* 보낸매세지 */
 .sent {
     align-items: flex-end;
+    display: flex;
 }
 .message-content-sent {
     background-color: #cedd61;
@@ -92,6 +102,7 @@ main {
     padding: 10px;
     border-radius: 10px;
     max-width: 400px;
+    margin-left: 5px;
 }
 
 /* 메세지 전송 부분 */
