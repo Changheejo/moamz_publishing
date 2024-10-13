@@ -43,6 +43,7 @@ body {
     padding: 10px;
     background-color: white;
     width: 600px;
+    min-height: 600px;
     max-height: 600px;
     /* 자동스크롤 */
     overflow-y: auto;
@@ -63,6 +64,9 @@ li {
     border-bottom: 1px solid #dddddd;
     /* margin: 10px 0; */
     padding: 10px 0;
+}
+li:hover {
+    background-color: #F8FAE9;
 }
 .chat-room {
     display: flex;
