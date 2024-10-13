@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../static/css/reset2.css">
+    <link rel="stylesheet" href="../../../static/css/mypage/seller/sellerSalesHistory.css">
+    <script defer src="../../../static/js/mypage/seller/sellerSalesHistory.js"></script>
+    <title>마이페이지</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section id="side-section"></section>
+
+        <!-- 상품판매내역 -->
+        <section class="sales-history-section">
+            <!-- 제목 -->
+            <div class="mypage-title-wrap">
+                <img>
+                상품판매내역
+            </div>
+            <!-- 카테고리 -->
+
+        </section>
+    </main>
+    <footer></footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(function() {
+        $("#side-section").load("sellerMypageSide.html");
+        // $("#side-section").load("sellerMypageSide.html", () => {
+        //     $.getScript("../../../static/js/mypage/seller/sellerMypageSide.js");
+        // });
+        // $("#main").load("main.html", function() {
+        //     $.getScript("../js/video.js");
+        //     $.getScript("../js/banner.js");
+        //     $.getScript("../js/special-hall.js");
+        // });
+        // $("#footer").load("footer.html");
+    });
+</script>
+</html>
