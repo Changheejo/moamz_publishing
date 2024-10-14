@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./../../static/css/reset.css">
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2f79c59b6071fb92267e232c13fea51f&libraries=services"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../static/css/reset.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2f79c59b6071fb92267e232c13fea51f&libraries=services"></script>
     <script src="./../../static/js/shopping/payment.js"></script>
+    <link rel="stylesheet" href="./../../static/css/shopping/payment.css">
 </head>
 <body>
   <div class="payment-container container">
@@ -71,7 +72,7 @@
                                 포인트 차감
                                 <span>(100p)</span>
                             </div>
-                            <textarea name="point" id="" style="resize: none;" placeholder="-200"/>
+                            <textarea name="point" id="" style="resize: none;" placeholder="200"></textarea>
                         </span>
                     </div>
                 </div>
@@ -128,7 +129,7 @@
                     픽업 시간
                 </div>
                 <div class="payment-store-box-second">
-                    <textarea name="pickup" id="" style="resize: none;" placeholder="2024-10-06 10:00 형식으로 작성해주세요"/>
+                    <textarea name="pickup" id="" style="resize: none;" placeholder="2024-10-06 10:00 형식으로 작성해주세요"></textarea>
                 </div>
             </div>
             <div class="payment-store-box">
@@ -136,11 +137,11 @@
                     요청 사항
                 </div>
                 <div class="payment-store-box-second">
-                    <textarea name="require" id="" style="resize: none;" placeholder="길이제한 100자"/>
+                    <textarea name="require" id="" style="resize: none;" placeholder="길이제한 100자"></textarea>
                 </div>
             </div>
             <div class="payment-store-map">
-                <div id="payment-map" style="width: 350px;height:200px;"></div>
+                <div id="payment-map" style="width:350px;height:200px;"></div>
             </div>
         </div>
     </div>
