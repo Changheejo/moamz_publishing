@@ -3,36 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>userHeaderLoginAfter</title>
+  <title>UserHeaderLogin</title>
   <link rel="stylesheet" href="/moamz_publishing/static/css/main/fragment/header/userHeaderLogin.css">
 </head>
 <body>
-  <div id="header">
-    <img src="/moamz_publishing/static/img/main/fragment/header/logo.png">
-    <ul class="header-search">
-      <li>
-        <a href="#">서비스소개</a>
-      </li>
-      <li>
-        <a href="#">쇼핑</a>
-      </li>
-      <li>
-        <a href="#">커뮤니티</a>
-      </li>
-      <li>
-        <a href="#">공지사항</a>
-      </li>
-    </ul>
-    <div id="search">
-      <input type="text">
-      <a href="#"><img src="/moamz_publishing/static/img/main/fragment/header/search.jpg"></a>
-    </div>
-    <div class="header-btn">
-      <div id="btn-img"><img src="/moamz_publishing/static/img/main/fragment/header/user.png"></div>
-      <div id="btn-img"><img src="/moamz_publishing/static/img/main/fragment/header/chat.png"></div>
-      <div id="btn-img"><img src="/moamz_publishing/static/img/main/fragment/header/cart.png"></div>
-      <div id="btn-img"><img src="/moamz_publishing/static/img/main/fragment/header/notification.png"></div>
-      <button id="login">로그인</button>
+  <div class="container">
+    <div class="header">
+      <img src="/moamz_publishing/static/img/main/fragment/header/logo.png">
+      <ul class="header-search">
+        <li>
+          <a href="#">서비스소개</a>
+        </li>
+        <li>
+          <a href="#">쇼핑</a>
+        </li>
+        <li>
+          <!-- <div class="community-dropdown-box"> -->
+            <a href="#">커뮤니티</a>
+            <!-- <img src="../../../../static/img/main/fragment/header/communityDropdownIcon.png" class="dropdown-icon" alt="드롭다운 아이콘"> -->
+            <div class="dropdown-content">
+              <a href="#">에코프로젝트</a>
+              <a href="#">소셜링</a>
+              <a href="#">레시피</a>
+              <a href="#">나눔게시판</a>
+              <a href="#">자유게시판</a>
+            </div>
+          <!-- </div> -->
+        </li>
+        <li>
+          <a href="#">공지사항</a>
+        </li>
+      </ul>
+      <div class="search">
+        <input type="text">
+        <a href="#"><img src="/moamz_publishing/static/img/main/fragment/header/search.jpg"></a>
+      </div>
+      <div class="header-btn">
+        <div class="btn-img"><img src="/moamz_publishing/static/img/main/fragment/header/user.png"></div>
+        <div class="btn-img"><img src="/moamz_publishing/static/img/main/fragment/header/chat.png"></div>
+        <div class="btn-img"><img src="/moamz_publishing/static/img/main/fragment/header/cart.png"></div>
+        <div class="btn-img">
+          <img src="/moamz_publishing/static/img/main/fragment/header/notification.png">
+          <div class="notification-dropdown">
+            <div class="notification-dropdown-box" onclick="location.href='#'">
+              <div class="userMypagePurchaseImg">
+                <img src="../../../../static/img/main/fragment/header/userMypagePurchaseImg.png" alt="구매상세이미지">
+              </div>
+              <div>
+                
+              </div>
+            </div>  
+            <div class="notification-dropdown-box" onclick="location.href='#'">
+
+            </div>
+            <div class="notification-dropdown-box" onclick="location.href='#'">
+
+            </div>
+          </div>
+        </div>
+        <button class="login" type="button">로그인</button>
+      </div>
     </div>
   </div>
 </body>

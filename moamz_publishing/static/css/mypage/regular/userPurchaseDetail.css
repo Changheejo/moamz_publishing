@@ -1,0 +1,102 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: "Pretendard-Variable";
+}
+
+main{
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  margin: auto;
+}
+
+.mypage-list{
+  width: 250px;
+  height: 1000px;
+  border: 1px solid black;
+}
+
+.mypage-user{
+  width: 220px;
+  height: 388px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  border-color: #dddddd;
+}
+
+.mypage-user-img{
+  width: 220px;
+  height: 220px;
+  background-color: #d9d9d9;
+}
+
+.user-name{
+  font-weight: bold;
+  text-align: center;
+  font-size: 17px;
+}
+
+.mypage-user-info{
+  margin-left:20px;
+}
+
+.mypage-user-info-box{
+  margin-top: 10px;
+  font-size: 15px;
+  color: #6a6a6a;
+}
+
+.mypage-user-info-box2{
+  /* margin-top: 10px; */
+  font-size: 15px;
+  color: #6a6a6a;
+}
+
+#info-list{
+  margin-left: 15px;
+}
+
+.mypage-user-info-box-tree{
+  margin-top:20px;
+}
+
+#info-list-tree{
+  color: #A1B60A;
+  font-weight: bold;
+}
+
+.mypage-side-category{
+  width: 220px;
+  height: 450px;
+  /* border: 1px solid black; */
+  margin: auto;
+  margin-top: 30px;
+}
+
+.mypage-side-category>ul{
+  margin-left: 30px;
+  /* clear:both; */
+}
+
+.category-list{
+  /* margin-top: 25px; */
+  width: 190px;
+  height: 50px;
+}
+
+a{
+  text-decoration: none;  
+  font-size:17px;
+  color: #6a6a6a;
+  font-weight: bold;
+}
+
+.userPurchaseHistory-list{
+  width: 750px;
+  height: 1000px;
+  border: 1px solid black;
+  background-color: #F7F7F7;
+}
