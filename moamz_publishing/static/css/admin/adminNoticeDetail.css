@@ -1,9 +1,3 @@
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<헤더+네비바>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-body{
-    width: 100%;
-    height: 100vh;
-}
 /* a 태그 기본 스타일 제거 */
 a {
     color: inherit; /* 링크 색상 제거 */
@@ -11,109 +5,114 @@ a {
     background: none; /* 배경색 제거 */
     outline: none; /* 포커스시 나타나는 외곽선 제거 */
 }
-
-
-/* 메인 컨테이너 */
-.main-container {
-    width: 1000px;
-    height: 664px;
-    margin: 0 auto;
-    background-color: #1B494C;
-    box-shadow: 0px 2.49px 7.18px rgba(0, 0, 0, 0.16); 
-
-    display: flex;
-    flex-direction: column;
+/* 버튼 reset css */
+button{
+    background: none;      /* 배경 제거 */
+    border: none;          /* 테두리 제거 */
+    padding: 0;            /* 기본 패딩 제거 */
+    margin: 0;             /* 기본 마진 제거 */
+    box-shadow: none;      /* 그림자 제거 */
+    cursor: pointer;       /* 마우스를 올리면 클릭 커서가 나타나도록 설정 */
+    outline: none;         /* 포커스시 나타나는 외곽선 제거 */
 }
-
-
-/* 헤더 */
-.main-container header{
-    height: 10%;
+header{
+    height: 70px;
     background-color: #ffffff;
-    /*justify-content: space-around;/*로고와 로그아웃버튼 양쪽 분리*/
     align-items: center;/* 높이를 맞춰 중앙 정렬 */
     box-shadow: 0px 2.49px 7.18px rgba(0, 0, 0, 0.16);  
-
     position: relative;
+    display:flex;
+    justify-content: space-between;
 }
-/* 로고 + 타이틀 */
-.main-container header .admin-logo{
-    display: flex;
-    align-items: center; /* 로고이미지와 타이틀 높이 맞춰 중앙 정렬*/
+main{
+    /* width: 1000px; */
+    margin: 0 auto;
+    height: 100vh;
+}
 
-    position: absolute;
-    top: 15px;
-    left: 15px;
+/* 로고 */
+header .admin-logo{
+    display: flex;
+    align-items: center;  
+    padding-left: 20px;
 }
 /* 로고 이미지 */
-.main-container header .admin-logo img{
-    width: 29px;
-    margin-right: 3px;
+header .admin-logo img{
+    width: 35px;
+    margin-right: 10px;
 }
-/* 타이틀 : 관리자 전용 사이트 */
-.main-container header .admin-logo div{
-    color: #0B3051; /* span 안되서 div로 변경함💥*/
-    font-weight: bold;/* 안먹힘 💥*/
-    font-size: 14.96px;
+/* 타이틀 */
+ header .admin-logo div{
+    color: #0B3051; 
+    font-weight: bold;
+    font-size: 25px;
 }
 /* 나가기 버튼 box */
-.main-container header .admin-logout__btn{
-    width: 35px;
-    height: 18px;
+ header .admin-logout__btn{
+    width: 60px;
+    height: 25px;
     border: 1px solid #0B3051;
-    border-radius: 3px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    position: absolute;
-    left:950px;
-    top: 18px;
+    margin-right: 70px;
 }
 /* 나가기 폰트 */
-.main-container header .admin-logout__btn a{
-    font-size: 10px; 
-    color:#0B3051;
+header .admin-logout__btn a{
+    font-size: 17px; 
+    color:#1B494C;
 }
-
-
+header .admin-logout__btn:hover{
+    background-color: #1B494C;
+}
+header .admin-logout__btn a:hover{
+    color:white;
+    background-color: #1B494C;
+}
 
 /* 좌측 네비바 */
-.main-container nav{
-    width: 15%;
-    height: auto; /* 높이를 컨텐츠에 맞춤 */
+nav{
     background-color: #ffffff;
-    padding: 9.58px 19px 405px 19px;
 }
 /* 네비바 전체 */
-.main-container nav ul{
-    padding-top: 17px;
+nav ul{
+    padding-top: 30px;
     padding-left: 13px;
 
     /* li들간에 위아래 간격 9px주기 */
     display: flex;
     flex-direction: column;
-    gap:9px
+    gap:25px
 }
-.main-container nav ul li{
+nav ul li{
     display: flex;
     height: 26px;
     align-items: center ;
+    margin-right: 10px;
 }
-.main-container nav ul li .nav-logo{
+nav ul li .nav-logo{
     margin-right: 11.76px;
 }
-.main-container nav ul li .nav-logo img{
-    width: 14px;
+
+ nav ul li .nav-logo img{
+    width: 20px;
 }
-.main-container nav ul li .nav-title a{
-    font-size: 12px;
+ nav ul li .nav-title a{
+    font-size: 20px;
     color: #5D7285;
 }
-/* 대쉬보드 선택일떄 (선택인 카테고리로 바꿔주기) */
-.main-container nav ul li:nth-child(3){
-    background-color: #F0F6FF;
+ nav ul li{
     width: 151px;
+    height: 45px;
+}
+nav ul li:hover{
+    background-color: #F0F6FF;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    background-color: #F0F6FF;
+    font-weight: bold;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -126,68 +125,60 @@ main{
 main .content-box{
     display: flex;
     flex-direction: column;
-
-    position: relative;
+    background-color: #1B494C;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 /* 타이틀 */
 main .content-box .page-title-box{
-    margin-left: 38px;
-    margin-top: 15px;
+   position: relative;
+   top: 30px;
+   left: 8px;
+   margin-bottom: 30px;
 }
 main .content-box .page-title-box .page-title{
-    font-size: 20px;
+    font-size:25px;
     color: #ffffff;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* 버튼 reset css */
-button{
-    background: none;      /* 배경 제거 */
-    border: none;          /* 테두리 제거 */
-    padding: 0;            /* 기본 패딩 제거 */
-    margin: 0;             /* 기본 마진 제거 */
-    box-shadow: none;      /* 그림자 제거 */
-    cursor: pointer;       /* 마우스를 올리면 클릭 커서가 나타나도록 설정 */
-    outline: none;         /* 포커스시 나타나는 외곽선 제거 */
-}
-
-
 
 /* 흰색 게시판 전체 */
 .content{
-    width: 650px;
-    height: 598px;
+    width: 90%;
+    height: 100vh;
     background-color: #FFFFFF;
 
-    position: absolute;
-    left: 162px;
-    bottom:-0px;
+    position: relative;
+    left: 176px;
+    bottom:55px;
 }
 /* 공지사항 제목 부분 */
 .content-title-box{
-    width: 94%;
-    height: 30px;
+    width: 100%;
+    height: 70px;
     border-top: 1px solid #d7d4d4;
     border-bottom: 1px solid #d7d4d4;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-bottom: 10px;
 }
 .content-title{
-    font: 15px;
+    font-size: 20px;
     font-weight: bold; /*💥적용 안되서 다시 체크하기*/
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .content-info{
     display: flex;
-    font-size: 12px;
+    font-size: 15px;
     color:#6A6A6A;
     gap: 20px;
     align-items: center;
 }
 .content-info .writer{
-    font-weight: bold;/*적용 안되서 다시 체크하기*/
+    font-weight: bold;
 }
 .content-info .text-box{
     display: flex;
@@ -195,29 +186,29 @@ button{
 }
 .content-info .btn-wrapper{
     position: absolute;
-    right: 10px;  /* 우측 끝으로 이동 */
-    top: 9%;     /* 수직 중앙 정렬*/
-    transform: translateY(-50%);  /* 정확한 수직 중앙 정렬 */
+    right: 10px; 
+    top: 9%; 
+    transform: translateY(-50%); 
+    display: flex;
+    gap: 7px;
 }
 .content-info .btn{
     border: 1px solid #5D7285;
     border-radius: 3px;
-    padding: 2px;
-    
+    padding: 5px;
+    color: #5D7285;
+    font-size: 15px;
 }
 .content-info .btn img{
-    width: 25%;
-}
-.content-info button{
-    font-size: 10px;
-    color: #5D7285;
+    width: 13px;
+    transform: translateY(12%)
 }
 /* 공지사항 내용 부분 */
 .content-detail-box{
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 20px;
-    font-size: 12px;
+    font-size: 15px;
     height: 80%;
 }
 .content-detail-box p{
