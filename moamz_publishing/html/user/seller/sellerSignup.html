@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>userSignup</title>
+  <link rel="stylesheet" href="../../../static/css/reset.css">
+  <link rel="stylesheet" href="../../../static/css/user/seller/sellerSignup.css">
+</head>
+<body>
+  <div id="signup-container">
+
+    <div id="signup-logo">
+      <img src="../../../static/img/user/logo-green.jpg">
+    </div>
+    <div id="signup-user"><strong>판매자 회원가입</strong></div>
+    
+    <form action="" method="post">
+      <div id="singup-profile">
+        <!-- 이미지 클릭시 첨부파일 이동! -->
+        <!-- <input type="file"> -->
+        <img src="">
+      </div>
+      
+      <div id="signup-wrap">
+        <div id="signup-email">
+          <input type="email" id="email-input" placeholder="이메일을 입력해주세요">
+          <button id="email-btn">중복확인</button>
+          <!-- <input type="button" id="email-btn" placeholder="중복확인"> -->
+          <input id="password-input" type="password" placeholder="비밀번호 입력(영문, 숫자, 특수문자 포함8~20)">
+          <input id="password-input" type="password" placeholder="비밀번호 재확인">
+          <!-- js 비밀번호 형식, 비밀번호 재확인 -->
+          <p></p>
+          <p></p>
+        </div>
+        <div id="signup-phone">
+          <input id="name-input" type="password" placeholder="이름">
+          <input type="email" id="input-phone" placeholder="휴대폰번호">
+          <button id="phone-btn">중복확인</button>
+          <input type="email" id="recheck-phone" placeholder="인증번호">
+          <button id="recheck-btn">확인</button>
+        </div>
+        <div id="signup-nickname">
+          <input type="text" id="nickname-input" placeholder="닉네임">
+          <button id="nickname-btn">중복확인</button>
+          <input type="email" id="birthday-input" placeholder=" [선택] 생년월일8자리">
+          <span>[선택] 성별 : </span>
+          <label for="">남 : <input type="radio" name="gender"></label>
+          <label for="">여 : <input type="radio"name="gender"></label>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</body>
+</html>

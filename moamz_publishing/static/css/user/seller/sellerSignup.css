@@ -1,0 +1,127 @@
+#signup-container{
+  border: 1px solid black;
+  width: 1000px;
+  height: 1400px;
+  margin: auto;
+}
+#signup-logo{
+  width: 196px;
+  height: 96px;
+  margin: 0 auto;
+}
+#signup-user{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  color: #947160;
+}
+#singup-profile{
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+#signup-wrap{
+  border: 1px solid black;
+  width:600px;
+  height: 900px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#signup-email{
+  border: 1px solid red;
+  width: 600px;
+}
+/* input과 button 사이즈가 동일하지 않음 */
+#email-input{
+  width: 500px;
+  height: 40px;
+  border-radius: 8px;
+  /* border-color: #dddddd; */
+}
+#email-btn{
+  background-color: #CEDD61;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+/* #signup-wrap>#email-btn::placeholder{
+  color: white;
+} */
+#password-input{
+  width: 580px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+#signup-phone{
+  border: 1px solid red;
+  width: 600px;
+  margin-top: 50px;
+}
+#name-input{
+  width: 580px;
+  height: 40px;
+  border-radius: 8px;
+}
+#input-phone{
+  width: 500px;
+  height: 40px;
+  border-radius: 8px;
+}
+#phone-btn{
+  background-color: #CEDD61;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+#recheck-phone{
+  width: 500px;
+  height: 40px;
+  border-radius: 8px;
+}
+#recheck-btn{
+  background-color: #CEDD61;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+#signup-nickname{
+  border: 1px solid red;
+  width: 600px;
+  margin-top: 50px;
+}
+#nickname-input{
+  width: 500px;
+  height: 40px;
+  border-radius: 8px;
+  /* border-color: #dddddd; */
+}
+#nickname-btn{
+  background-color: #CEDD61;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+#birthday-input{
+  width: 580px;
+  height: 40px;
+  border-radius: 8px;
+}
+#signup-nickname>span{
+  color: #555;
+}
+#signup-nickname>label{
+  color: #555;
+}
