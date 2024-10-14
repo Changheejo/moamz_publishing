@@ -10,7 +10,7 @@ main {
     width: 250px;
     height: 100%;
 }
-.sales-history-section {
+.product-list-section {
     width: 100%;
     height: 100%;
     min-height: 1000px;
@@ -32,7 +32,7 @@ main {
     margin-right: 5px;
 }
 /* 상품상태 카테고리 */
-.sales-history-menu {
+.product-menu {
     height: 40px;
     border-bottom: 2px solid #ddd;
     display: flex;
@@ -67,63 +67,70 @@ main {
     flex-direction: column;
     padding: 10px 10px 5px;
 }
-.product-list>div {
+.product-title-wrap {
     margin-bottom: 10px;
-}
-/* 주문시간, 상태변경 버튼 */
-.order-info {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
-.order-info button {
+.product-name {
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+}
+/* 버튼 */
+.product-completed-btn {
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
     border: none;
-    border-radius: 10px;
-    width: 100px;
-    height: 24px;
     background-color: #CEDD61;
     font-size: 15px;
     cursor: pointer;
 }
-/* 이미지, 픽업시간, 고객명, 요쳥사항 */
-.product-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.product-delete-btn {
+    width: 40px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d9d9d9;
     font-size: 15px;
+    cursor: pointer;
 }
-.product-info img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    margin-right: 5px;
-}
-.product-info>div {
-    margin-right: 5px;
-    width: 170px;
-}
-.product-info div:nth-child(2) {
-    width: 200px;
-}
-.list-title {
-    font-size: 17px;
-    font-weight: bold;
-    color: black;
+/* 상품정보 */
+.product-info-wrap {
+    display: flex;
+    /* align-items: ; */
     margin-bottom: 5px;
-    /* 영역 넘어가면 텍스트 숨김 */
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
-.request-wrap p:nth-child(2) {
-    /* 영역 넘어가면 텍스트 숨김 */
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.product-info-wrap img {
+    width: 125px;
+    height: 125px;
+    margin-right: 5px;
+}
+.product-detail-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px; 
+}
+.product-item {
+    display: flex;
+    width: 200px;
+    margin-bottom: 4px;
+
+}
+.product-label {
+    color: black;
+    font-weight: bold;
+    width: 100px;
+}
+.product-detail {
+    width: 200px;
 }
 /* 자세히 보러가기 */
 #move-to-detail {
     text-align: right;
     font-size: 15px;
     cursor: pointer;
+    margin-bottom:5px;
 }
