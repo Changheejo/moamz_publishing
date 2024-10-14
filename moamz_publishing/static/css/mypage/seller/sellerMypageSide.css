@@ -86,7 +86,7 @@
     display: block;
 }
 .menu-item a:hover,
-.selected {
+.menu-item a.clicked {
     background-color: #EFEAE7;
     color: #947160;
 }
