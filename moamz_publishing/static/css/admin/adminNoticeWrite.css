@@ -28,105 +28,24 @@ main{
     /* width: 1000px; */
     margin: 0 auto;
     height: 100vh;
+    display: flex;
 }
 
-/* 로고 */
-header .admin-logo{
-    display: flex;
-    align-items: center;  
-    padding-left: 20px;
-}
-/* 로고 이미지 */
-header .admin-logo img{
-    width: 35px;
-    margin-right: 10px;
-}
-/* 타이틀 */
- header .admin-logo div{
-    color: #0B3051; 
-    font-weight: bold;
-    font-size: 25px;
-}
-/* 나가기 버튼 box */
- header .admin-logout__btn{
-    width: 60px;
-    height: 25px;
-    border: 1px solid #0B3051;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 70px;
-}
-/* 나가기 폰트 */
-header .admin-logout__btn a{
-    font-size: 17px; 
-    color:#1B494C;
-}
-header .admin-logout__btn:hover{
-    background-color: #1B494C;
-}
-header .admin-logout__btn a:hover{
-    color:white;
-    background-color: #1B494C;
-}
 
 /* 좌측 네비바 */
 nav{
+    width: 20%;
     background-color: #ffffff;
-}
-/* 네비바 전체 */
-nav ul{
-    padding-top: 30px;
-    padding-left: 13px;
-
-    /* li들간에 위아래 간격 9px주기 */
-    display: flex;
-    flex-direction: column;
-    gap:25px
-}
-nav ul li{
-    display: flex;
-    height: 26px;
-    align-items: center ;
-    margin-right: 10px;
-}
-nav ul li .nav-logo{
-    margin-right: 11.76px;
-}
-
- nav ul li .nav-logo img{
-    width: 20px;
-}
- nav ul li .nav-title a{
-    font-size: 20px;
-    color: #5D7285;
-}
- nav ul li{
-    width: 151px;
-    height: 45px;
-}
-nav ul li:hover{
-    background-color: #F0F6FF;
-    font-weight: bold;
-}
-nav ul li a:hover{
-    background-color: #F0F6FF;
-    font-weight: bold;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-/* 네비바+메인화면의 부모인 main */
-main{
-    display: flex;
-}
 /* 타이틀 + 카운팅카드뷰 + 에코프젝 + 그래프의 부모 */
 main .content-box{
     display: flex;
     flex-direction: column;
     background-color: #1B494C;
-    width: 100%;
+    width: 80%;
     /* padding-left: 30px;
     padding-right: 30px; */
 }
@@ -145,7 +64,7 @@ main .content-box .page-title-box .page-title{
 
 /* 흰색 게시판 전체 */
 .content{
-    width: 100%;
+    width: 50%;
     height: 100vh;
     background-color: #FFFFFF;
     border-left: 1px solid #d7d4d4;

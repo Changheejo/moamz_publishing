@@ -193,7 +193,7 @@ main .content-box .page-title-box .page-title{
 
 .toggle-btn-container button{
     color:#6A6A6A;
-    font-size: 15px;
+    font-size: 20px;
 }
 /* 버튼 활성화 : .active-btn 클래스 붙었을 때 */
 .toggle-btn-container button.active-btn{

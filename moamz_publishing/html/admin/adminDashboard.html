@@ -8,83 +8,11 @@
     <link rel="stylesheet" href="../../static/css/admin/adminDashboard.css" />
   </head>
   <body>
-    <header>
-      <div class="admin-logo">
-        <img src="../../static/img/admin/adminLogo.png" alt="admin-logo" />
-        <div>관리자 전용 사이트</div>
-      </div>
-      <div class="admin-logout__btn">
-        <a class="btn-allview" href="#">나가기</a>
-      </div>
+    <header id="adminHeader">
     </header>
-    <!-- 네비바 + 메인화면 -->
     <main>
-      <!-- 좌측 네비바 -->
-      <nav>
-        <ul>
-          <li>
-            <div class="nav-logo">
-              <img
-                src="../../static/img/admin/dashboardLogo.png"
-                alt="dashboardLogo"
-              />
-            </div>
-            <div class="nav-title">
-              <!-- 홈화면인 현재 화면 연결(다른화면에서 사용시 주소 바꿀것) -->
-              <a href="adminDashboard.html">대쉬보드</a>
-            </div>
-          </li>
-          <li>
-            <div class="nav-logo">
-              <img
-                src="../../static/img/admin/userManage.png"
-                alt="dashboardLogo"
-              />
-            </div>
-            <div class="nav-title">
-              <!-- 홈화면인 현재 화면 연결(다른화면에서 사용시 주소 바꿀것) -->
-              <a href="#">회원관리</a>
-            </div>
-          </li>
-          <li>
-            <div class="nav-logo">
-              <img
-                src="../../static/img/admin/noticeBoard.png"
-                alt="dashboardLogo"
-              />
-            </div>
-            <div class="nav-title">
-              <!-- 홈화면인 현재 화면 연결(다른화면에서 사용시 주소 바꿀것) -->
-              <a href="#">공지사항</a>
-            </div>
-          </li>
-          <li>
-            <div class="nav-logo">
-              <img
-                src="../../static/img/admin/ecoBoard.png"
-                alt="dashboardLogo"
-              />
-            </div>
-            <div class="nav-title">
-              <!-- 홈화면인 현재 화면 연결(다른화면에서 사용시 주소 바꿀것) -->
-              <a href="#">에코프로젝트</a>
-            </div>
-          </li>
-          <li>
-            <div class="nav-logo">
-              <img
-                src="../../static/img/admin/inquiry.png"
-                alt="dashboardLogo"
-              />
-            </div>
-            <div class="nav-title">
-              <!-- 홈화면인 현재 화면 연결(다른화면에서 사용시 주소 바꿀것) -->
-              <a href="#">문의상담</a>
-            </div>
-          </li>
-        </ul>
+      <nav id="adminNavBar">   
       </nav>
-      <!------<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
       <!-- 우측 녹색 메인 화면-->
       <div class="content-box">
         <!-- 타이틀 : dashboard -->
@@ -352,4 +280,11 @@
       </div>
     </main>
   </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(function() {
+        $("#adminNavBar").load("adminNavBar.html");
+        $("#adminHeader").load("adminHeader.html")
+    });
+</script>
 </html>
