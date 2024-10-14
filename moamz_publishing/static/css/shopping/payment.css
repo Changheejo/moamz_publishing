@@ -103,6 +103,8 @@ button:hover{
 .payment-payment-payment-top{
     font-size: 26px;
 }
-.payment-payment-payment-price-product{
-    
+.payment-payment-payment-price-product > span{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
 }
