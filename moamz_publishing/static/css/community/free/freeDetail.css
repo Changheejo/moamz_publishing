@@ -73,6 +73,11 @@ main {
     width: 15px;
     height: 15px;
 }
+.like-btn.active {
+    background-color: #F8FAE9;
+    color: #CEDD61;
+    border-color: #CEDD61;
+}
 .btn-others>.chat-to-writer-btn {
     border-radius: 0;
     width: 149px;
