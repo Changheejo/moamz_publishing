@@ -147,14 +147,14 @@ main .content-box .page-title-box .page-title{
 /* 검색창 */
 .search-input{
     position: relative;
-    width: 230px;
+    width: 180px;
     height: 20px;
     left: 81%;
     top: -0.5%;
 }
 .search-input input{
     height: 100%;
-   width: 100%;
+   width: 180px;
     padding: 1px;
 }
 /* 검색창 placeholder 디자인 */
