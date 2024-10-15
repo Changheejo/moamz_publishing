@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header></header>
+    <header id="header"></header>
     <main>
         <!-- 상단 이미지 영역 -->
         <!-- ✅여기 그냥 빼자고 건의.. -->
@@ -61,6 +61,14 @@
         
 
     </main>
-    <footer></footer>
+    <footer id="footer"></footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(function() {
+        $("#header").load("../../main/fragment/header/userHeaderLogin.html");
+        $("#footer").load("../../main/fragment/footer/userFooter.html");
+    });     
+</script>
+</script>
 </html>
