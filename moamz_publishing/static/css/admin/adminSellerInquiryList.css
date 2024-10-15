@@ -147,14 +147,14 @@ main .content-box .page-title-box .page-title{
 /* 검색창 */
 .search-input{
     position: relative;
-    width: 180px;
+    width: 230px;
     height: 20px;
     left: 81%;
     top: -0.5%;
 }
 .search-input input{
     height: 100%;
-   width: 180px;
+   width: 100%;
     padding: 1px;
 }
 /* 검색창 placeholder 디자인 */
@@ -212,6 +212,7 @@ table {
 .table-hidden{
     display: none;
 }
+
 th, td {
     padding: 10px;
     text-align: center;
@@ -224,6 +225,23 @@ th {
     background-color: black;
     padding:15px;
 }
+
+td button{
+    padding: 3px 5px;
+    color: white;
+    background-color: #9E9E9E;
+}
+td button:hover{
+    background-color:#1B494C;
+    color: white;
+    cursor:pointer; /*커서를 손모양으로 변경*/
+}
+
+/*답변된 회원  */
+#seller-table-container td{
+    padding: 13.5px;
+}
+
 /* 페이지네이션 css */
 .pagination{
     position: absolute;
