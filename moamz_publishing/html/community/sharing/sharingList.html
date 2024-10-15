@@ -9,7 +9,7 @@
     <title>나눔게시판</title>
 </head>
 <body>
-    <header></header>
+    <header id="header"></header>
     <main>
         <!-- 각 게시판의 헤더 -->
          <!-- ✅게시판 제목, 게시판 설명, wirte-btn 연결 onclick 링크 수정하시면 됩니다. -->
@@ -153,6 +153,13 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer id="footer"></footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(function() {
+        $("#header").load("../../main/fragment/header/userHeaderLogin.html");
+        $("#footer").load("../../main/fragment/footer/userFooter.html");
+    });     
+</script>
 </html>

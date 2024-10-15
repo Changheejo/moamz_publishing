@@ -138,4 +138,5 @@ main {
     border-radius: 20px; 
     cursor: pointer;
     box-shadow: 0 4px 4px #6a6a6a6a;
+    margin-bottom: 30px;
 }
