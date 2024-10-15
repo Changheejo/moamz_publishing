@@ -14,7 +14,9 @@
       <div class="content-box">
         <div class="page-title-box">
           <div class="page-title">에코 프로젝트</div>
-          <button onclick="location.href='adminEcoWrite.html'">글 작성하기</button>
+          <button onclick="location.href='adminEcoWrite.html'">
+            글 작성하기
+          </button>
         </div>
         <!-- 흰색 게시판 전체 -->
         <div class="content">
@@ -24,20 +26,23 @@
           </div>
           <!-- 진행중인 에코배너 화면 -->
           <div id="ongoing-eco">
-            <div class="banner-box"  onclick="goToDetailPage()">
+            <div class="banner-box" onclick="goToDetailPage()">
               <div class="banner-img">
                 <img src="../../static/img/admin/plogging.jpg" alt="plogging" />
               </div>
               <div class="banner-article">
-                <div class="title-and-editBtn">
+                <div class="title-and-btns">
                   <div class="title">환경을 위한 플로깅 프로젝트!</div>
-                  <button onclick="editEco(event)">
-                    <img
-                      src="../../static/img/admin/whitePencil.png"
-                      alt="editBtn"
-                    />
-                    <span>수정</span>
-                  </button>
+                  <div class="btns">
+                    <button class="finish-btn">프로젝트 종료시키기</button>
+                    <button class="edit-btn" onclick="editEco(event)">
+                      <img
+                        src="../../static/img/admin/whitePencil.png"
+                        alt="editBtn"
+                      />
+                      <span>수정</span>
+                    </button>
+                  </div>
                 </div>
                 <div class="calendar-and-like">
                   <div class="calendar">
@@ -87,15 +92,18 @@
                 <img src="../../static/img/admin/plogging.jpg" alt="plogging" />
               </div>
               <div class="banner-article">
-                <div class="title-and-editBtn">
+                <div class="title-and-btns">
                   <div class="title">환경을 위한 플로깅 프로젝트!</div>
-                  <button>
-                    <img
-                      src="../../static/img/admin/whitePencil.png"
-                      alt="editBtn"
-                    />
-                    <span>수정</span>
-                  </button>
+                  <div class="btns">
+                    <button class="finish-btn">프로젝트 종료시키기</button>
+                    <button class="edit-btn" onclick="editEco(event)">
+                      <img
+                        src="../../static/img/admin/whitePencil.png"
+                        alt="editBtn"
+                      />
+                      <span>수정</span>
+                    </button>
+                  </div>
                 </div>
                 <div class="calendar-and-like">
                   <div class="calendar">
@@ -111,7 +119,10 @@
                     <div class="calendar-period"><span>1</span>주일간</div>
                   </div>
                   <div class="like">
-                    <img src="../../static/img/admin/heart.png" alt="heartIcon" />
+                    <img
+                      src="../../static/img/admin/heart.png"
+                      alt="heartIcon"
+                    />
                     <div class="like-value">
                       <span>22</span>
                     </div>
@@ -120,8 +131,8 @@
                 <div class="description">
                   <div class="description-title">프로젝트 소개</div>
                   <p class="description-detail">
-                    플로깅은 스웨덴에서 시작된 환경 운동으로, 조깅을 하면서 동시에
-                    쓰레기를 줍는<br />
+                    플로깅은 스웨덴에서 시작된 환경 운동으로, 조깅을 하면서
+                    동시에 쓰레기를 줍는<br />
                     활동입니다. 건강과 환경 보호를 동시에 실천할 수 있는 이 멋진
                     운동은 조깅보다 더<br />
                     많은 칼로리를 소모할 수 있습니다.
@@ -138,7 +149,6 @@
               </div>
             </div>
           </div>
-          
 
           <!-- 완료된 에코배너 화면 -->
           <div id="finished-eco" class="banner-hidden">
@@ -153,7 +163,8 @@
                 <div class="calendar-and-like">
                   <div class="calendar">
                     <div class="calendar-icon-wrapper">
-                      <img class="banner-img"
+                      <img
+                        class="banner-img"
                         src="../../static/img/admin/calendar.png"
                         alt="calendarIcon"
                       />
@@ -215,7 +226,10 @@
                     <div class="calendar-period"><span>1</span>주일간</div>
                   </div>
                   <div class="like">
-                    <img src="../../static/img/admin/heart.png" alt="heartIcon" />
+                    <img
+                      src="../../static/img/admin/heart.png"
+                      alt="heartIcon"
+                    />
                     <div class="like-value">
                       <span>22</span>
                     </div>
@@ -224,8 +238,8 @@
                 <div class="description">
                   <div class="description-title">프로젝트 소개</div>
                   <p class="description-detail">
-                    플로깅은 스웨덴에서 시작된 환경 운동으로, 조깅을 하면서 동시에
-                    쓰레기를 줍는<br />
+                    플로깅은 스웨덴에서 시작된 환경 운동으로, 조깅을 하면서
+                    동시에 쓰레기를 줍는<br />
                     활동입니다. 건강과 환경 보호를 동시에 실천할 수 있는 이 멋진
                     운동은 조깅보다 더<br />
                     많은 칼로리를 소모할 수 있습니다.
@@ -242,15 +256,14 @@
               </div>
             </div>
           </div>
-          </div>
+        </div>
 
-          <div class="pagination">
-            <button class="prev">Previous</button>
-            <button class="page active">1</button>
-            <button class="page">2</button>
-            <button class="page">3</button>
-            <button class="next">Next</button>
-          </div>
+        <div class="pagination">
+          <button class="prev">Previous</button>
+          <button class="page active">1</button>
+          <button class="page">2</button>
+          <button class="page">3</button>
+          <button class="next">Next</button>
         </div>
       </div>
     </main>

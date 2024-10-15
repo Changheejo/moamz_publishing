@@ -1,6 +1,6 @@
 // 상세 페이지로 이동하는 함수
 function goToDetailPage() {
-    window.location.href = "detailPage.html";  // 상세 페이지 URL로 이동
+    window.location.href = "adminEcoCertifiDetail.html";  // 상세 페이지 URL로 이동
   }
   
   // 모달 열기 함수

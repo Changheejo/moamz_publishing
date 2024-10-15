@@ -70,11 +70,18 @@ a {
     position: relative;
   }
   .write-wrap{
-          padding: 30px;
+          padding: 50px;
+          position: relative;
   }
   .write-wrap span{
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
+  }
+    
+  input, select, textarea{
+    width: 160px;
+    height: 30px;
+    border: 1px solid #DDDDDD;
   }
 
 .title-and-file__wrapper{
@@ -85,23 +92,75 @@ a {
   .title-box {
     display: flex;
     margin-bottom: 30px;
-  }
-  
-  .title-value {
-    width: 200px;
-    
-  }
-  .file-upload-box img{
-    width: 60px;
-  }
-  .file-upload-box {
-    display: flex;
-  }
-  .period{
-    display: flex;
+    align-items: center;
+    position : relative;
+    top: -40px;
   }
 
-  
+  .title-box input {
+    width: 200px;
+
+  }
+
+  /* 참여횟수 */
+  .join-number select {
+    line-height: 10px;
+  }
+  /* 파일 업로드 */
+  .file-upload-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .file-upload-box img{
+    width: 80px;
+    position: relative;
+    left: 10px;
+    top: -10px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .file-upload-title{
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .file-upload-description{
+    font-size: 12px;
+    color:  #1b494c;
+    position: relative;
+    top: 55px;
+    left: 23px;
+    z-index: 1;
+    font-weight: bold;
+  }
+  /* 기간 */
+  .period{
+    display: flex;
+    gap:130px;
+    position: absolute;
+    top: 20%;
+    left: 1.9%;
+
+  }
+  /* 프젝 소개 */
+  .detail-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+  }
+  .detail-box textarea{
+    width: 800px;
+    height: 150px;
+  }
+  /* 인증사항 */
+  .certify-box{
+    display: flex;
+    flex-direction: column;
+  }
+  .certify-box textarea{
+    width: 800px;
+    height: 100px;
+  }
 
 
 
