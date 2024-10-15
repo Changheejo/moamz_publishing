@@ -40,21 +40,21 @@
                 <div class="view-value">10</div>
               </div>
               <div class="btn-wrapper">
-                <button class="btn">
+                <button class="btn" type="button" onclick="location.href='adminNoticeModify.html'"">
                   <img
                     src="../../static/img/admin/edit.png"
                     alt="modifyButton"
                   />
                   수정
                 </button>
-                <button class="btn">
+                <button class="btn" id="delete-btn">
                   <img
                     src="../../static/img/admin/trashcan.png"
                     alt="deleteButton"
                   />
                   삭제
                 </button>
-                <button class="btn">목록으로 가기</button>
+                <button class="btn" type="button" onclick="location.href='adminNoticeList.html'">목록으로 가기</button>
               </div>
             </div>
           </div>
@@ -72,4 +72,5 @@
           $("#adminHeader").load("adminHeader.html")
       });
   </script>
+  <script defer src="../../static/js/admin/adminNoticeDetail.js"></script>
 </html>
