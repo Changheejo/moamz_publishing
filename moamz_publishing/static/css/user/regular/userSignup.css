@@ -1,5 +1,9 @@
-#signup-container{
+input{
   border: 1px solid black;
+  padding: 0;
+}
+#signup-container{
+  /* border: 1px solid black; */
   width: 1000px;
   height: 1400px;
   margin: auto;
@@ -15,13 +19,40 @@
   font-size: 20px;
   color: #947160;
 }
+
+
 #singup-profile{
-  border: 1px solid black;
-  width: 50px;
-  height: 50px;
+  /* border: 1px solid black; */
+  width: 55px;
+  height: 55px;
   margin: 0 auto;
   margin-top: 8px;
 }
+div.image{
+  background-image: url("../../../img/user/loginprofile.jpg");   /*기본으로 보일 사진*/
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  /* border: 1px solid gray; */
+}
+div.cancle{
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  background-image: url("thumbnail_cancle_btn.png"); /*취소버튼 경로이동*/
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  right: 15px;
+  top: 0;
+}
+
 #signup-wrap{
   border: 1px solid black;
   width:600px;
@@ -52,7 +83,7 @@
 /* #signup-wrap>#email-btn::placeholder{
   color: white;
 } */
-#password-input{
+.password-input{
   width: 580px;
   height: 40px;
   border-radius: 8px;
@@ -161,12 +192,29 @@
   width: 600px;
   margin-top: 50px;
 }
-#ab{
+/* ab 테스트용 */
+#info-check{
   width: 580px;
   height: 40px;
   border: 1px solid #555;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  /* 수평맞추기 align-items 
+    display: flex;을 사용해야함
+  */
+  font-size: 12px;
+  color: #555;
 }
+#info-click{
+  font-size: 13px;
+  color: #6a6a6a;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+
+
 
 #signup-box{
   margin-top: 50px;
