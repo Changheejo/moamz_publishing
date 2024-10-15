@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../static/css/reset2.css">
+    <link rel="stylesheet" href="../../../static/css/community/ecoproject/ecoCertificationWrite.css">
+    <!-- include libraries(jQuery, bootstrap) -->
+    <title>자유게시판</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="write-header-section">
+            <div class="write-title">프로젝트 인증글</div>
+        </section>
+        <section class="write-content-section">
+            <form method="post" action="">
+                <div class="title-wrap">
+                    <span class="write-form-title">📝 제목*</span>
+                    <input type="text" placeholder="제목을 작성해주세요." required/>
+                </div>
+                <div class="file-wrap">
+                    <span class="write-form-title">📝 첨부파일*</span>
+                    <input type="file" name="picture"></input>
+                </div>
+                <div class="edit-wrap">
+                  <span class="write-form-title">📝 상세내용*</span>
+                  <textarea style="resize: none;"></textarea>
+              </div>
+                <div class="btn-wrap">
+                    <button id="cancle-btn" type="button">취소</button>
+                    <button id="write-btn" type="submit">등록</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
