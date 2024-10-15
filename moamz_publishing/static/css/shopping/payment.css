@@ -29,7 +29,11 @@ button:hover{
 .payment-wrap2{
     /* border: 1px solid black; */
     display: flex;
-    height: 800px;
+    height: 700px;
+    justify-content: space-between;
+}
+.payment-payment{
+    width: 450px;
 }
 .payment-payment-product{
     display: flex;
@@ -39,6 +43,18 @@ button:hover{
     border-top: 1px solid rgba(0, 0, 0, 0.4);
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     padding-top: 20px;
+    margin-bottom: 177px;
+    width: 400px;
+}
+.payment-payment-product-img{
+    margin-right: 20px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+.payment-payment-product-img > img{
+    width: 140px;
+    height: 155px;
 }
 .payment-payment-product-text{
     width: 300px;
@@ -95,16 +111,89 @@ button:hover{
 .payment-payment-payment{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin-top: 20px;
-    border: 1px solid black;
+    /* justify-content: space-between; */
+    /* margin-top: 20px; */
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
     height: 300px;
+    width: 400px;
+    /* margin: 0 auto; */
 }
 .payment-payment-payment-top{
     font-size: 26px;
+    margin-bottom: 30px;
 }
 .payment-payment-payment-price-product > span{
     display: flex;
     justify-content: space-around;
     margin-bottom: 15px;
+}
+.payment-payment-payment-text{
+    width: 140px;
+}
+textarea{
+    height: 20px;
+    width: 70px;
+    text-align: right;
+    color: #CEDD61;
+    border-radius: 6px;
+}
+.payment-payment-payment-price{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    margin-bottom: 5px;
+}
+.payment-payment-payment-final-price{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.payment-payment-payment-final-price > span{
+    font-size: 24px;
+}
+.payment-payment-payment-final-policy{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.payment-store{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.payment-store-top > span{
+    display: flex;
+    justify-content: space-between;
+    font-size: 26px;
+}
+.payment-store-top > span > button{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.payment-store-box{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+#zipcode{
+    font-size: 15px;
+}
+#pickup{
+    width: 240px;
+    height: 37px;
+    text-align: left;
+}
+#require{
+    width: 240px;
+    height: 75px;
+    text-align: left;
 }

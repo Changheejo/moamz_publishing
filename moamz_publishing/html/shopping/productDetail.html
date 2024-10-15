@@ -7,6 +7,7 @@
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2f79c59b6071fb92267e232c13fea51f&libraries=services"></script>
     <script src="./../../static/js/shopping/produceDetail.js"></script>
     <link rel="stylesheet" href="./../../static/css/reset.css">
+    <link rel="stylesheet" href="./../../static/css/shopping/productDetail.css">
 </head>
 <body>
     <div class="productDetail-container container">
@@ -22,9 +23,16 @@
                         [Dole] 아보카도 1kg
                     </div>
                     <div class="productDetail-product-count-count">
-                        <div class="productDetail-product-count-btn">
+                        <!-- <div class="productDetail-product-count-btn">
                             <button type="button" id="inc">+</button>
                             <div class="productDetail-product-count-num">
+                                1
+                            </div>
+                            <button type="button" id="dec">-</button>
+                        </div> -->
+                        <div class="payment-product-count-btn">
+                            <button type="button" id="inc">+</button>
+                            <div class="payment-product-count-num">
                                 1
                             </div>
                             <button type="button" id="dec">-</button>
@@ -109,7 +117,7 @@
                         </div>
                     </div>
                     <div class="productDetail-detail-detail-map">
-                        <div id="productDetail-map" style="width:480px;height:260px;"></div>
+                        <div id="productDetail-map" style="width:600px;height:360px;"></div>
                     </div>
                 </div>
             </div>
