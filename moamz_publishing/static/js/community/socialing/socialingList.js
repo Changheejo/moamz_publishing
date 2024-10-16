@@ -5,15 +5,16 @@ const hobbyBtn = document.getElementById('hobby-btn');
 const activityBtn = document.getElementById('activity-btn');
 const improvementBtn =document.getElementById('improvement-btn');
 const challengeBtn = document.getElementById('challenge-btn');
-console.log(goTogetherBtn);
 
-const eatTogetherList = document.getElementById('"eat-together-list');
+const eatTogetherList = document.getElementById('eat-together-list');
 const goTogetherList= document.getElementById('go-together-list');
 const volunteerList = document.getElementById('volunteer-list');
 const hobbyList=document.getElementById('hobby-list');
 const activityList = document.getElementById('activity-list');
 const improvementList = document.getElementById('improvement-list');
 const challengeList = document.getElementById('challenge-list');
+
+const searchBtn = document.querySelector('.search-btn');
 
 eatTogetherBtn.addEventListener('click',()=>{
     eatTogetherBtn.classList.add('active');
@@ -142,3 +143,9 @@ challengeBtn.addEventListener('click',()=>{
     challengeList.classList.remove('hidden');
 
 });
+
+
+// 이미 유저가 직접 생성한 소셜링이 있는 경우,
+searchBtn.addEventListener('click',()=>{
+    alert('이미 생성한 소셜링이 있습니다!\n소셜링 생성은 1회만 가능합니다!');
+})
