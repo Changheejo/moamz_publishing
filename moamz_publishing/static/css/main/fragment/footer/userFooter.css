@@ -7,6 +7,12 @@
 footer{
   margin:auto;
   background-color: #CEDD61;
+  height: 98px;
+}
+
+.footer-wrap{
+  margin:auto;
+  background-color: #CEDD61;
   width: 1000px;
   height: 98px;
   display: flex;
