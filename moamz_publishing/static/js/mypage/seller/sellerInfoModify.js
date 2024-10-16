@@ -2,7 +2,8 @@ const inputPw = document.getElementById('inputPw');
 const checkPw = document.getElementById('password-check');
 const passwordMessage = document.getElementById('password-message');
 const confirmMessage = document.getElementById('confirm-message');
-const modifyBtn = document.getElementById('pw-modify-btn');
+const pwModifyBtn = document.getElementById('pw-modify-btn');
+const cancleBtn = document.getElementById('cancle-btn');
 
 // 비밀번호 유효성검사
 const pwValidateCheck = () => { 
@@ -50,9 +51,9 @@ function checkFormValidity() {
 
     // 둘 다 true일 때만 비밀번호 변경 활성화
     if (isPasswordValid && isConfirmValid) {
-        modifyBtn.disabled = false;
+        pwModifyBtn.disabled = false;
     } else {
-        modifyBtn.disabled = true;
+        pwModifyBtn.disabled = true;
     }
 }
 
@@ -63,7 +64,7 @@ checkPw.addEventListener('input', checkFormValidity);
 
 
 // 비밀번호 변경 버튼
-modifyBtn.addEventListener('click', () => {
+pwModifyBtn.addEventListener('click', () => {
     const isConfirm = confirm('비밀번호를 변경하시겠습니까? 다시 로그인이 필요합니다.');
     if(isConfirm) {
         location.href='../../user/seller/sellerLogin.html'
@@ -71,3 +72,11 @@ modifyBtn.addEventListener('click', () => {
 
     }
 })
+
+// 나가기 버튼
+cancleBtn.addEventListener('click', () => {
+    const isConfirm = confirm('현재 페이지에서 나가시겠습니까? 작성한 내용이 저장되지 않습니다.');
+    if(isConfirm) {
+        location.href='sellerSalesHistory.html';
+    }
+});
