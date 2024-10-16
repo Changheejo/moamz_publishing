@@ -49,3 +49,12 @@ nav ul li a:hover{
     background-color: #F0F6FF;
     font-weight: bold;
 }
+
+/* 네비게이션바  active */
+.nav-link{
+}
+
+.nav-link.active{
+    background-color: #F0F6FF;
+    font-weight: bold;
+}
