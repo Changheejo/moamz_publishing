@@ -26,3 +26,13 @@ function editEco(event){
   event.stopPropagation();
   window.location.href="adminEcoModify.html";
 }
+
+function changeStatus(event){
+  event.stopPropagation();
+  if(confirm("완료된 프로젝트로 변경하시겠습니까?")){
+    //비동기처리되어 완료된 프로젝트로 변경시키기
+  }else{
+    //변경 취소하고 컨펌창만 닫기
+  }
+
+}
