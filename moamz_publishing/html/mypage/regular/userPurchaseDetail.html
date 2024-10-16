@@ -6,6 +6,7 @@
   <title>userPurchaseDetail</title>
   <link rel="stylesheet" href="../../../static/css/reset2.css">
   <link rel="stylesheet" href="../../../static/css/mypage/regular/userPurchaseDetail.css">
+  
 </head>
 <body>
   <header></header>
@@ -48,28 +49,28 @@
               <a href="#" class="clicked">● 상품 구매 내역</a>
             </li>
             <li class="category-list">
-              <a href="#">● MY소셜링</a>
+              <a href="userMySocialing.html">● MY소셜링</a>
             </li>
             <li class="category-list">
-              <a href="#">● My나눔</a>
+              <a href="userMySharing.html">● My나눔</a>
             </li>
             <li class="category-list">
-              <a href="#">● MY리뷰</a>
+              <a href="userMyReview.html">● MY리뷰</a>
             </li>
             <li class="category-list">
-              <a href="#">● MY좋아요</a>
+              <a href="userMyLike.html">● MY좋아요</a>
             </li>
             <li class="category-list">
-              <a href="#">● MY게시글</a>
+              <a href="userMyPost.html">● MY게시글</a>
             </li>
             <li class="category-list">
-              <a href="#">● 회원정보변경</a>
+              <a href="userInfoModify.html">● 회원정보변경</a>
             </li>
             <li class="category-list">
-              <a href="#">● 비밀번호변경</a>
+              <a href="userResetPassword.html">● 비밀번호변경</a>
             </li>
             <li class="category-list">
-              <a href="#">● 관리자 문의</a>
+              <a href="userAdminInquiryList.html">● 관리자 문의</a>
             </li>
         </ul>
       </div>
@@ -98,22 +99,26 @@
           </div>
         </div>
         <div class="purchase-order-box2">
-          <div class="seller-detail">
-            <img src="../../../static/img/mypage/regular/purchaseImg.png" id="seller-detail-img" alt="상품 이미지">
-            <span>업체명</span>
+          <div class="seller-wrap">
+            <div class="seller-detail">
+              <img src="../../../static/img/mypage/regular/purchaseImg.png" id="seller-detail-img" alt="상품 이미지">
+              <span>업체명</span>
+            </div>
+            <div class="seller-detail-info">
+              <span class="seller-label">업체위치</span>
+              <span>서울특별시 강남구 테헤란로 146 현익빌딩 3,4층</span>
+            </div>
+            <div class="seller-detail-info">
+              <span class="seller-label">영업시간</span>
+              <span>10:00 ~22:00</span>
+            </div>
+            <div class="seller-detail-info">
+              <span class="seller-label">대표번호</span>
+              <span>02-538-0021</span>
+            </div>
+          <div class="seller-chat">
             <button type="button" id="seller-chat-btn">💬판매자와 채팅하기</button>
-          </div>
-          <div class="seller-detail-info">
-            <span class="seller-label">업체위치</span>
-            <span>서울특별시 강남구 테헤란로 146 현익빌딩 3,4층</span>
-          </div>
-          <div class="seller-detail-info">
-            <span class="seller-label">영업시간</span>
-            <span>10:00 ~22:00</span>
-          </div>
-          <div class="seller-detail-info">
-            <span class="seller-label">대표번호</span>
-            <span>02-538-0021</span>
+            <div class="review-write">리뷰 작성하기</div>
           </div>
         </div>  
         <div class="purchase-order-box3">
@@ -160,9 +165,11 @@
           </div>
         </div>
           <!-- 구매내역으로 이동 버튼 -->
-          <button type="button" class="move-purchase-list-btn" onclick="location.href='userPurchaseHistory.html'">상품 판매 내역으로 이동</button>
+          <button type="button" class="move-purchase-list-btn" onclick="location.href='userPurchaseHistory.html'">상품 구매 내역으로 이동</button>
       </div>
     </div>
   </main>
   <footer></footer>
 </body>
+</html>
+
