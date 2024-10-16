@@ -6,9 +6,10 @@
   <title>UserMySocialing</title>
   <link rel="stylesheet" href="../../../static/css/mypage/regular/userMySocialing.css">
   <link rel="stylesheet" href="../../../static/css/reset2.css">
+  <script defer src="../../../static/js/mypage/regular/userMySocialing.js"></script>
 </head>
 <body>
-  <header></header>
+  <header id="header"></header>
   <main>
     <div class="mypage-list">
       <div class="mypage-user">
@@ -45,46 +46,79 @@
       <div class="mypage-side-category">
         <ul>
             <li class="category-list">
-              <a href="#">● 상품 구매 내역</a>
+              <a href="userPurchaseHistory.html">● 상품 구매 내역</a>
             </li>
             <li class="category-list">
-              <a href="#" class="clicked">● MY소셜링</a>
+              <a href="userMySocialing.html" class="clicked">● MY소셜링</a>
             </li>
             <li class="category-list">
-              <a href="#">● My나눔</a>
+              <a href="userMySharing.html">● My나눔</a>
             </li>
             <li class="category-list">
-              <a href="#">● MY리뷰</a>
+              <a href="userMyReview.html">● MY리뷰</a>
             </li>
             <li class="category-list">
-              <a href="#">● MY좋아요</a>
+              <a href="userMyLike.html">● MY좋아요</a>
             </li>
             <li class="category-list">
-              <a href="#">● MY게시글</a>
+              <a href="userMyPost.html">● MY게시글</a>
             </li>
             <li class="category-list">
-              <a href="#">● 회원정보변경</a>
+              <a href="userInfoModify.html">● 회원정보변경</a>
             </li>
             <li class="category-list">
-              <a href="#">● 비밀번호변경</a>
+              <a href="userResetPassword.html">● 비밀번호변경</a>
             </li>
             <li class="category-list">
-              <a href="#">● 관리자 문의</a>
+              <a href="userAdminInquiryList.html">● 관리자 문의</a>
             </li>
         </ul>
       </div>
     </div>
 
-       <!-- 거래상세내역 -->
-    <div class="userPurchaseHistory-list">
-      <div class="userPurchaseHistory-list-box">
+       <!-- 내 소셜링 관리 -->
+    <div class="userMySocialing-list">
+      <div class="userMySocialing-list-box">
         <div class="socialing-title">
           <img src="../../../static/img/mypage/regular/socialingImg.png" alt="소셜링관리 이미지">
           <span>내 소셜링 관리</span>
         </div>
+        <div class="socialing-card-box">
+          <div class="socialing-img">
+            <img src="../../../static/img/mypage/regular/socialingCardImg.png" alt="소셜링 이미지">
+          </div>
+          <div class="socialing-card-info-box">
+            <div class="socialing-info">
+              <p class="socialing-info-title">우리 함께 모여서 저녁식사 어때요?</p>
+              <p class="socialing-info-detail"><img src="../../../static/img/mypage/regular/socialingDate.png" alt="날짜">2024/10/07 - 2024/12/31</p>
+              <p class="socialing-info-detail"><img src="../../../static/img/mypage/regular/socialingPeople.png" alt="인원수">2/5</p>
+              <div class="info-detail-box">
+                <div class="info-detail-text-eat">함께 먹어요</div>
+                <div class="info-detail-text-age">20-30대</div>
+                <div class="info-detail-text-age">성별무관</div>
+              </div>
+            </div>
+            <div class="socialing-btn">
+              <div class="socialing-btn-box">
+                <button class="socialing-modify-btn" onclick="">수정</button>
+                <button class="socialing-modify-btn">삭제</button>
+              </div>
+              <div class="socialing-btn-detail">
+                <div id="detail-btn"><a href="../../community/socialing/socialingDetatil.html">자세히 보러가기 &gt;</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
-  <footer></footer>
+  <footer id="footer"></footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(function() {
+        $("#header").load("../../main/fragment/header/userHeaderLogin.html");
+        $("#footer").load("../../main/fragment/footer/userFooter.html");
+    });
+</script>
 </html>

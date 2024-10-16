@@ -1,7 +1,5 @@
 *{
-  margin:0;
-  padding:0;
-  font-family: "Pretendard-Variable";
+  color: #6a6a6a;
 }
 
 main{
@@ -14,17 +12,16 @@ main{
 .mypage-list{
   width: 250px;
   height: 1000px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .mypage-user{
   width: 220px;
   height: 388px;
-  border: 1px solid black;
+  border: 1px solid #dddddd;
   margin: auto;
   margin-top: 20px;
   border-radius: 10px;
-  border-color: #dddddd;
 }
 
 .mypage-user-img{
@@ -37,14 +34,15 @@ main{
   font-weight: bold;
   text-align: center;
   font-size: 17px;
-  margin-top: 10px;
+  margin-top: 20px;
+  color: black;
 }
 
 .mypage-user-info{
   display: flex;
   flex-direction: column;
   padding: 5px 10px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .mypage-user-info-box{
@@ -98,12 +96,14 @@ main{
   color: #CEDD61;
 }
 
+
 a{
   text-decoration: none;  
   font-size:17px;
   color: #6a6a6a;
   font-weight: bold;
 }
+
 
 .userPurchaseHistory-container{
   width: 750px;
@@ -121,6 +121,7 @@ a{
 
 #product-list-title{
   font-size: 20px;
+  color: black;
 }
 
 .userPurchaseHistory-list{
@@ -152,13 +153,15 @@ a{
 }
 
 .purchase-state{
-  width: 100px;
+  display: flex;
+  width: 80px;
   height: 24px;
   margin-right: 10px;
   background-color: #CEDD61;
   font-size:15px;
   border-radius: 10px;
-  text-align: center;
+  align-items: center;
+  padding-left: 10px;
   color: #6a6a6a;
 }
 
@@ -190,11 +193,12 @@ a{
 }
 
 .purchase-pickup{
-  width: 150px;
+  width: 130px;
   height: 42px;
   /* margin: 0 0 130px 250px; */
   margin-top: 12px;
-  margin-left: 70px;
+  margin-left: 30px;
+  /* border: 1px solid black; */
 }
 
 .purchase-seller{
@@ -216,3 +220,4 @@ a{
   color:#6a6a6a;
   margin-left: 580px;
 }
+

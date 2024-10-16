@@ -1,3 +1,4 @@
+
 // 썸머노트 삽입
 $(document).ready(function() {
     //여기 아래 부분
@@ -88,8 +89,8 @@ writeBtn.addEventListener('click', (e) => {
         genderSelect.focus();
         return;
     }
-    if (!minAge.value.trim() || minAge.value <= 20) {
-        alert('최소 나이제한을 입력해주세요. 소셜링 참여는 성인만 가능합니다.');
+    if (!minAge.value.trim()) {
+        alert('최소 나이제한을 입력해주세요.');
         minAge.focus();
         return;
     }

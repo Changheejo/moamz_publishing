@@ -16,18 +16,36 @@
     <div id="login-wrap">
       <div class="find-strong"><strong>이름</strong></div>
       <div class="find-input">
-        <input type="text" placeholder="실명을 입력해주세요">
+        <input type="text" id="find-name-check" placeholder="실명을 입력해주세요" required>
       </div>
       <div id="blank"></div>
       <div class="find-strong"><strong>휴대전화</strong></div>
       <div class="find-input">
-        <input type="text" placeholder="휴대폰번호를 입력해 주세요">
+        <input type="text" id="find-phone-check" placeholder="휴대폰번호를 입력해 주세요" required>
       </div>
       <div id="find-id">
-        <button id="find-id-btn"><p>아이디 찾기</p></button>
+        <button id="find-id-btn">아이디 찾기</button>
       </div>
     </div>
     
   </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+  const find = document.getElementById("find-id-btn");
+  const name = document.getElementById("find-name-check");
+  const phone = document.getElementById("find-phone-check");
+
+  find.addEventListener("click", () => {
+    alert("아이디 X 휴대전화 X");
+  });
+
+  // find.addEventListener("click", () => {
+  //   if(name === null && phone === null){
+  //     alert("값을 입력하세요");
+  //   }else{
+  //     alert("db없음");
+  //   }
+  // });
+</script>
 </html>
