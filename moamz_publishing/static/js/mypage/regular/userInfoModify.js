@@ -1,15 +1,11 @@
+/* 주소검색, 핸드폰인증 api 해야함 */
 const thumbnailInput = document.getElementById('attach');
 const thumbnailImg = document.querySelector(".thumbnail-img");
 const thumbnailCancleBtn = document.querySelector(".thumbnail-cancle-btn");
+const userBirth = document.getElementById('user-birth');
 const addressDetail2 = document.getElementById('address-detail-2');
-const storePhoneNum = document.getElementById('store-phone-num');
-const storeOpenTime = document.getElementById('store-open-time')
-const storeCloseTime = document.getElementById('store-close-time')
-const storeDetail = document.getElementById('store-detail');
 const cancleBtn = document.getElementById('cancle-btn');
-const storeModifyBtn = document.getElementById('store-modify-btn');
-
-
+const userInfoModifyBtn = document.getElementById('user-info-modify-btn');
 
 // 썸네일
 thumbnailInput.addEventListener("change", (e) => {
@@ -44,21 +40,30 @@ thumbnailCancleBtn.addEventListener("click", (e) => {
     thumbnailCancleBtn.style.display = "none";
 });
 
-
 // 나가기 버튼
 cancleBtn.addEventListener('click', () => {
     const isConfirm = confirm('현재 페이지에서 나가시겠습니까? 작성한 내용이 저장되지 않습니다.');
     if(isConfirm) {
-        location.href='sellerSalesHistory.html';
+        location.href='userPurchaseHistory.html';
     }
 });
 
 // 변경하기 버튼
-storeModifyBtn.addEventListener('click', () => {
-
+userInfoModifyBtn.addEventListener('click', () => {
     // 값이 입력됐는지 검사
     if(!thumbnailInput.value) {
-        alert('업체 대표사진을 등록해주세요.');
+        alert('프로필 사진을 등록해주세요.');
+        return;
+    }
+    if(!userBirth.value.trim()) {
+        alert('생년월일을 입력해주세요.');
+        userBirth.focus();
+        return;
+    }
+    // 라디오버튼..
+    const gender = document.querySelector('input[name="user-gender"]:checked');
+    if (!gender) {
+        alert('성별을 선택해주세요.');
         return;
     }
     if(!addressDetail2.value.trim()) {
@@ -66,31 +71,11 @@ storeModifyBtn.addEventListener('click', () => {
         addressDetail2.focus();
         return;
     }
-    if(!storePhoneNum.value.trim()) {
-        alert('업체 대표번호를 입력해주세요.');
-        storePhoneNum.focus();
-        return;
-    }
-    if(!storeOpenTime.value.trim()) {
-        alert('오픈시간을 입력해주세요.');
-        storeOpenTime.focus();
-        return;
-    }
-    if(!storeCloseTime.value.trim()) {
-        alert('마감시간을 입력해주세요.');
-        storeCloseTime.focus();
-        return;
-    }
-    if(!storeDetail.value.trim()) {
-        alert('상세정보를 입력해주세요.');
-        storeDetail.focus();
-        return;
-    }
 
-    const isConfirm = confirm('업체 정보를 수정하시겠습니까?');
+    const isConfirm = confirm('회원 정보를 수정하시겠습니까?');
     if(isConfirm) {
         alert('수정되었습니다.');
-        location.href='sellerSalesHistory.html';
+        location.href='userPurchaseHistory.html';
     } else {
 
     }
