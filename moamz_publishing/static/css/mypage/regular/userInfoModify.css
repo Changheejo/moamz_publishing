@@ -1,9 +1,13 @@
+main {
+    color: #6a6a6a;
+}
 .product-write-container {
     width: 700px;
     margin: 30px auto ;
 }
 /* 제목 영역 */
 .write-title {
+    color: black;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
@@ -14,26 +18,13 @@
     width: 100%;
     /* text-align: center; */
 }
-/* 변경 안되는 영역 */
-.cannot-modify-container {
-    margin-bottom: 50px;
+/* 라벨 */
+.modify-label {
+    width: 170px;
+    color: #A2B541;
+    font-size: 18px;
+    font-weight: bold;
 }
-.cannot-modify-container .modify-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-input[type='text'],
-input[type='number'] {
-    flex-grow: 1;
-    height: 32px;
-    padding: 0 10px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-}
-
-
 /* 썸네일 영역 */
 .thumbnail-container {
     display: flex;
@@ -72,78 +63,97 @@ input[type='number'] {
     right: 5px;
     top: 5px;
 }
-
+/* 변경 안되는 영역 */
+/* 생년월일, 성별 영역 */
+.cannot-modify-container,
+.birth-gender-container {
+    margin-bottom: 50px;
+}
+.cannot-modify-container .modify-item,
+.birth-gender-container .modify-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+/* 성별 */
+.radio-item {
+    display: flex;
+}
+.radio-item input {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+input[type='text'],
+input[type='number'],
+input[type='date'] {
+    flex-grow: 1;
+    height: 32px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
 /* 업체주소, 대표번호 영역 */
-.address-modify-container,
-.store-phone-num-container {
+.address-modify-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .address-modify-container .modify-item {
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
 }
-.store-phone-num-container .modify-item {
-    margin-top: 5px;
-}
 #address-search-btn {
     width: 50px;
-    color: white;
-    background-color: #947160;
+    background-color: #CEDD61;
     font-size: 16px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+}
+
+/* 휴대폰번호 변경 */
+.phone-modify-container {
+    display: flex;
+    flex-direction: column;
+}
+.phone-modify-container .modify-item {
+    margin-top: 10px;
+    display: flex;
 }
 /* input type='number' 화살표 없애기 */
 input[type='number']::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
-/* 영업시간 영역 */
-.store-run-hours-container {
-    display: flex;
-    margin-bottom: 30px;
-}
-.store-run-hours-container div {
-    display: flex;
-    flex-direction: column;
-    margin-right: 30px;
-}
-.store-run-hours-container .modify-item {
-    margin-bottom: 5px;
-}
-input[type='time'] {
-    width: 150px;
-    height: 32px;
-    padding: 0 10px;
-    border: 1px solid #ddd;
+#msg-submit-btn,
+#certicifation-num-check-btn {
+    width: 50px;
+    background-color: #CEDD61;
+    font-size: 16px;
+    border: none;
     border-radius: 6px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+#phone-modify-btn {
+    margin-top: 10px;
+    width: 140px;
+    height: 40px;
+    margin-left: auto;
+    border-radius: 6px;
+    border: none;
+    background-color: #CEDD61;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 4px #6a6a6a6a;
+}
+#phone-modify-btn:disabled {
+    background-color: #ddd;
 }
 
-/* 업체 상세정보 */
-.store-detail-container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-}
-.store-detail-container .modify-item {
-    margin-bottom: 5px;
-}
-#store-detail {
-    flex-grow: 1;
-    height: 110px;
-    /* 크기 조절 버튼 지우기 */
-    resize: none; 
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-/* 버튼 */
+/* 버튼 영역 */
 .btn-container {
     margin-top: 50px;
     text-align: center;
@@ -161,9 +171,8 @@ input[type='time'] {
 #cancle-btn {
     background-color: #ddd;
 }
-#store-modify-btn {
-    background-color: #947160;
-    color: white;
+#user-info-modify-btn {
+    background-color: #CEDD61;
 }
 /* 회원탈퇴 */
 .withdraw-container {

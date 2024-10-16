@@ -85,14 +85,16 @@
                     <div class="write-item thumbnail">
                         <p class="write-label thumb">📝 상품 실사진 첨부*</p>
                         <p class="write-label thumb">소비기한이나 제조연월일이 반드시 보이도록 찍어주세요.</p>
-                        <div class="thumbnail-wrap">
-                            <!--lable을 누르면 input type=file이 실행-->
-                            <label for="attach">
-                                <div class="thumbnail-img"></div>
-                            </label>
-                            <div class="thumbnail-cancle-btn"></div>
+                        <div class="thumbnail-container">
+                            <div class="thumbnail-wrap">
+                                <!--lable을 누르면 input type=file이 실행-->
+                                <label for="attach">
+                                    <div class="thumbnail-img"></div>
+                                </label>
+                                <div class="thumbnail-cancle-btn"></div>
+                            </div>
+                            <input type="file" id="attach" style="display: none;">    
                         </div>
-                        <input type="file" id="attach" style="display: none;">   
                     </div>
                     <div class="write-item product-detail">
                         <p class="write-label">📝 상품상세*</p>

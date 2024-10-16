@@ -1,6 +1,4 @@
-*{
 
-}
 .product-write-container {
     width: 700px;
     margin: 20px auto ;
@@ -79,6 +77,9 @@ textarea {
     padding: 0 10px;
 }
 /* 썸네일 영역 */
+.thumbnail-container {
+    display: flex;
+}
 .write-item.thumbnail {
     flex-direction: column;
 }
@@ -97,6 +98,7 @@ textarea {
     height: 150px;
     border-radius: 10px;
     overflow: hidden;
+    margin-right: 10px;
 }
 .thumbnail-img {
     background-image: url("../../../img/mypage/seller/thumbnail.png");
