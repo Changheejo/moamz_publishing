@@ -6,6 +6,7 @@
   <title>userSignup</title>
   <link rel="stylesheet" href="../../../static/css/reset2.css">
   <link rel="stylesheet" href="../../../static/css/user/regular/userSignup.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
   <div id="signup-container">
@@ -15,7 +16,7 @@
     </div>
     <div id="signup-user"><strong>일반 회원가입</strong></div>
     
-    <form action="" method="post">
+    <form action="">
       <div id="singup-profile">
         <!-- 이미지 클릭시 첨부파일 이동! -->
         <!--lable을 누르면 input 태그로 연결-->
@@ -33,17 +34,18 @@
           <input type="email" id="email-input" placeholder="이메일을 입력해주세요">
           <button id="email-btn">중복확인</button>
           <!-- <input type="button" id="email-btn" placeholder="중복확인"> -->
-          <input class="password-input" type="password" placeholder="비밀번호 입력(영문, 숫자, 특수문자 포함8~20)">
-          <input class="password-input" type="password" placeholder="비밀번호 재확인">
+          <input id="password-input" type="password" placeholder="비밀번호 입력(영문, 숫자, 특수문자 포함8~20)">
+          <input id="password-recheck" type="password" placeholder="비밀번호 재확인">
           <!-- js 비밀번호 형식, 비밀번호 재확인 -->
-          <p></p>
-          <p></p>
+          <p id="check-p"></p>
+          <p id="recheck-p"></p>
         </div>
         <div id="signup-phone">
           <input id="name-input" type="password" placeholder=" 이름">
           <input type="email" id="input-phone" placeholder=" 휴대폰번호">
-          <button id="phone-btn">중복확인</button>
+          <button id="phone-btn">전송</button>
           <input type="email" id="recheck-phone" placeholder=" 인증번호">
+          <span id="time"></span>
           <button id="recheck-btn">확인</button>
         </div>
         <div id="signup-nickname">
@@ -56,7 +58,7 @@
         </div>
         <div id="signup-post"> 
           <input type="text" id="post-input" placeholder=" 우편번호" readonly>
-          <button id="post-btn">중복확인</button>
+          <button id="post-btn">검색</button>
           <input type="text" id="address" placeholder=" 인증번호" readonly>
           <input type="text" id="detail-address" placeholder= "도로명 주소">
         </div>
@@ -80,6 +82,19 @@
   </div>
 </body>
 <script>
+const emailBtn = document.getElementById("email-btn");
+const nicknameBtn = document.getElementById("nickname-btn");
+
+emailBtn.addEventListener("click", () => {
+  alert("이메일 중복 검사");
+});
+
+nicknameBtn.addEventListener("click", () => {
+  alert("닉네임 중복검사");
+});
+
+
+
   const input = document.getElementById("attach");
   const thumnail = document.querySelector("div.image");
   const cancle = document.querySelector("div.cancle");
@@ -130,5 +145,94 @@
       //3. X 버튼 숨기기
       cancle.style.display = "none";
   })
+//-----------------------------------------------------------
+
+$(function(){
+    $('#password-input').keyup(function(){
+      $('#recheck-p').html('');
+    });
+
+    $('#password-recheck').keyup(function(){
+
+        if($('#password-input').val() != $('#password-recheck').val()){
+          $('#recheck-p').html('•비밀번호 일치하지 않음<br><br>');
+          $('#recheck-p').attr('color', '#ff0000');
+        } else{
+          $('#recheck-p').html('•비밀번호 일치함<br><br>');
+          $('#recheck-p').attr('color', '#008000');
+        }
+
+    });
+});
+
+//-----------------------------------------------------------
+var pw = $("password-input").val();
+var reg = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,20}$/;
+var hangulcheck = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+$(function(){
+    $('#password-input').keyup(function(){
+      $('#recheck-p').html('');
+    });
+
+    $('#password-recheck').keyup(function(){
+
+        if(false === reg.test(pw)){
+          $('#check-p').html('•비밀번호는 8자 이상 20자 이하 하며, 숫자/대문자/소문자/특수문자를 모두 포함해야 합니다.<br><br>');
+          $('#check-p').attr('color', '#ff0000');
+        } else if(pw.search(/\s/) != -1){
+          $('#check-p').html('•비밀번호는 공백 없이 입력해주세요.<br><br>');
+          $('#check-p').attr('color', '#008000');
+        } else if(hangulcheck.test(pw)){
+          $('#check-p').html('•비밀번호에 한글을 사용 할 수 없습니다.<br><br>');
+          $('#check-p').attr('color', '#008000');
+        } else{
+          console("통과");
+        }
+
+    });
+});
+
+//-----------------------------------------------------------
+$(document).ready(function() {
+    let seconds; // 남은 시간 변수
+    let countdown; // 카운트다운을 관리하는 변수
+    const $timeSpan = $('#time'); // 시간을 표시할 요소
+    const $btnSend = $('#phone-btn'); // "인증번호 받기" 버튼 요소
+
+    // 시간을 업데이트하고 화면에 표시하는 함수
+    const updateCountdown = function() {
+        if (seconds >= 0) {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = seconds % 60;
+            $timeSpan.text(`${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`);
+            seconds--;
+        } else {
+            clearInterval(countdown);
+            alert('인증번호 유효시간이 만료되었습니다.');
+        }
+    };
+
+    // "인증번호 받기" 버튼 클릭 이벤트 핸들러
+    $btnSend.on('click', function(e) {
+        e.preventDefault();
+        $btnSend.text('재전송');
+        alert('인증번호가 발송되었습니다.');
+
+        clearInterval(countdown);
+        seconds = 180; // 3분(180초)
+
+        updateCountdown();
+        // 1초마다 카운트다운 업데이트
+        countdown = setInterval(updateCountdown, 1000); 
+    });
+});
+
+
+</script>
+<script>
+    $(function() {
+        $("#header").load("../../main/fragment/header/sellerHeader.html");
+        $("#footer").load("../../main/fragment/footer/sellerFooter.html");
+    });
 </script>
 </html>
