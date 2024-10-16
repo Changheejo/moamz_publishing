@@ -108,7 +108,7 @@ writeBtn.addEventListener('click', (e) => {
     const isConfirm = confirm('소셜링을 등록하시겠습니까?');
     if (isConfirm) {
         alert('등록되었습니다. 마이페이지>my소셜링에서 소셜링 관리가 가능합니다.')
-        location.href='userMySocialing.html';
+        location.href='../../mypage/regular/userMySocialing.html';
     } else {
 
     }
