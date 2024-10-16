@@ -1,3 +1,7 @@
+input{
+  border: 1px solid black;
+  padding: 0;
+}
 #signup-container{
   border: 1px solid black;
   width: 1000px;
@@ -18,7 +22,7 @@
 }
 #singup-profile{
   /* border: 1px solid black; */
-  width: 50px;
+  width: 60px;
   height: 50px;
   margin: 0 auto;
   margin-top: 8px;
@@ -28,7 +32,7 @@ div.image{
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  width: 50px;
+  width: 60px;
   height: 50px;
   cursor: pointer;
   /* border: 1px solid gray; */
@@ -48,7 +52,7 @@ div.cancle{
   top: 0;
 }
 #signup-wrap{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width:600px;
   height: 1000px;
   margin: 0 auto;
@@ -56,10 +60,15 @@ div.cancle{
 }
 
 #signup-email{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 600px;
 }
 /* input과 button 사이즈가 동일하지 않음 */
+
+
+/* #ex{
+  display: flex;
+} */
 #email-input{
   width: 500px;
   height: 40px;
@@ -82,11 +91,17 @@ div.cancle{
   height: 40px;
   border-radius: 8px;
 }
+#password-recheck{
+  width: 580px;
+  height: 40px;
+  border-radius: 8px;
+}
 
 #signup-phone{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 600px;
   margin-top: 50px;
+  position: relative;
 }
 #name-input{
   width: 580px;
@@ -119,9 +134,16 @@ div.cancle{
   border-radius: 8px;
   color: white;
 }
+#signup-phone>span{
+  position: absolute;
+  right: 110px;
+  top: 95px;
+  color: #6a6a6a;
+  font-size: 15px;
+}
 
 #signup-post{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 600px;
   margin-top: 50px;
 }
@@ -155,7 +177,7 @@ div.cancle{
 }
 
 #signup-business{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 600px;
   margin-top: 50px;
 }
