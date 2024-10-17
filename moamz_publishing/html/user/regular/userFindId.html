@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>userFindId</title>
   <link rel="stylesheet" href="../../../static/css/user/regular/userFindId.css">
+  <link rel="stylesheet" href="../../../static/css/reset2.css">
+  <script defer src="../../../static/js/user/regular/userFindId.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
+  <header id="header"></header>
   <div id="find-container">
 
     <div id="find-logo">
@@ -29,23 +33,12 @@
     </div>
     
   </div>
+  <footer id="footer"></footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
-  const find = document.getElementById("find-id-btn");
-  const name = document.getElementById("find-name-check");
-  const phone = document.getElementById("find-phone-check");
-
-  find.addEventListener("click", () => {
-    alert("아이디 X 휴대전화 X");
+  $(function() {
+      $("#header").load("../../main/fragment/header/userHeaderLogin.html");
+      $("#footer").load("../../main/fragment/footer/userFooter.html");
   });
-
-  // find.addEventListener("click", () => {
-  //   if(name === null && phone === null){
-  //     alert("값을 입력하세요");
-  //   }else{
-  //     alert("db없음");
-  //   }
-  // });
 </script>
 </html>
