@@ -8,7 +8,7 @@
   <!-- <link rel="stylesheet" href="../../../static/css/reset.css"> -->
 </head>
 <body>
-  <header></header>
+  <header id="header"></header>
   <main>
     <div class="noticeList-title">
       <h1>공지사항 📢</h1>
@@ -128,6 +128,13 @@
 
     </div>
   </main>
-  <footer></footer>
+  <footer id="footer"></footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(function() {
+        $("#header").load("../../main/fragment/header/userHeaderLogin.html");
+        $("#footer").load("../../main/fragment/footer/userFooter.html");
+    });
+</script>
 </html>
