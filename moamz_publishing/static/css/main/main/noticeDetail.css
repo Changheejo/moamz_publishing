@@ -6,15 +6,19 @@
 
 main{
   width: 700px;
-  height: 100%;
+  /* height: 100%; */
   margin: auto;
 }
 
 .noticeDetail-container{
   width: 700px;
-  height: 250px; 
   margin: auto;
   margin-top: 30px;
+}
+
+.noticeDetail-container h2{
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .noticeDetail-wrap{
@@ -44,15 +48,6 @@ main{
   margin-left: 10px;
 }
 
-/* .notice-content{
-  font-size: 15px;
-  width: 700px;
-  height: 500px;
-  border-bottom:0.5px solid rgba(106, 106, 106, 0.37);
-  border-top: 0.5px solid rgba(106, 106, 106, 0.37);
-  border: 1px solid black;
-} */
-
 button{
   width: 315px;
   height: 26px;
@@ -64,13 +59,16 @@ button{
   margin-left: 180px;
   margin-top: 20px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .noticeDetail-write{
   font-size: 15px;
   width: 700px;
-  height: 500px;
+  min-height: 500px;
   border-bottom:0.5px solid rgba(106, 106, 106, 0.37);
   border-top: 0.5px solid rgba(106, 106, 106, 0.37);
+  padding: 20px;
 }
+
 

@@ -8,7 +8,7 @@
   <!-- <link rel="stylesheet" href="../../../static/css/reset.css"> -->
 </head>
 <body>
-  <header></header>
+  <header id="header"></header>
   <main>
     <div class="main-container">
       <img src="../../../static/img/main/main/mainPage.png" alt="메인 화면">
@@ -202,6 +202,13 @@
       </div>
     </div>
   </main>
-  <footer></footer>
+  <footer id="footer"></footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(function() {
+        $("#header").load("../../main/fragment/header/userHeaderLogin.html");
+        $("#footer").load("../../main/fragment/footer/userFooter.html");
+    });
+</script>
 </html>

@@ -1,11 +1,8 @@
-*{
-  color: #6a6a6a;
-}
-
 main{
   width: 1000px;
   display: flex;
   margin: auto;
+  color: #6a6a6a;
 }
 
 .mypage-list{
