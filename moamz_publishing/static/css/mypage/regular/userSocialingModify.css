@@ -1,4 +1,5 @@
 .product-write-container {
+    color: #6a6a6a;
     width: 700px;
     margin: 20px auto ;
 }
@@ -9,9 +10,11 @@
     align-items: center;
 }
 .write-title {
+    color: black;
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 15px;
+    padding: 15px 0;
 }
 /* 글 작성 영역 */
 .write-content-container {
