@@ -1,47 +1,18 @@
-/* 원래 코드 */
-// 메뉴 클릭했을 때 css 고정
-const menuItems = document.querySelectorAll('.menu-item a');
+const currentUrl = window.location.pathname.split("/").pop();;//현재페이지 url 가져오기
+const navLinks = document.querySelectorAll('.menu-item');
+console.log(navLinks);
 
-menuItems.forEach(item => {
-    item.addEventListener('click', function() {
-        // 나머지 태그에서 clicked 클래스 제거
-        menuItems.forEach(item => {
-            item.classList.remove('clicked');
-        });
-        // 클릭된 태그에 clicked 클래스 추가
-        this.classList.add('clicked');
-    })
-});
-
-
-
-/*
-// 메뉴 클릭했을 때 css 고정
-const menuItems = document.querySelectorAll('.menu-item a');
-
-// 로컬 스토리지에서 마지막으로 클릭된 메뉴를 불러오기
-const lastClicked = localStorage.getItem('clickedMenu');
-    
-if (lastClicked) {
-    // 로컬 스토리지에 저장된 메뉴에 clicked 클래스 추가
-    const activeMenu = document.querySelector(`.menu-item a[href="${lastClicked}"]`);
-    if (activeMenu) {
-        activeMenu.classList.add('clicked');
+// 클릭한 네비게이션의 페이지가 화면에 나오고
+// 클릭한 네비게이션만 강조되어 고정되기.
+navLinks.forEach(link => {
+    console.log(link);
+    const onclickValue = link.getAttribute('onclick');
+    const url = onclickValue.match(/location\.href='([^']+)'/)[1]; // 정규식을 사용해 href 추출
+    console.log(url);
+    if(url === currentUrl){
+       link.classList.add('active'); 
+    //    console.log(link);
     }
-}
 
-
-menuItems.forEach(item => {
-    item.addEventListener('click', function() {
-        // 모든 메뉴에서 clicked 클래스 제거
-        menuItems.forEach(item => {
-            item.classList.remove('clicked');
-        });
-        // 클릭된 메뉴에 clicked 클래스 추가
-        this.classList.add('clicked');
-        
-        // 로컬 스토리지에 클릭된 메뉴의 href 저장
-        localStorage.setItem('clickedMenu', this.getAttribute('href'));
-    });
-});
-*/
+  });
+  

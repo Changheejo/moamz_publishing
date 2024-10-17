@@ -98,7 +98,8 @@ main {
     border-radius: 5px;
     cursor: pointer;
 }
-.community-category-container li:hover {
+.community-category-container li:hover,
+.community-category-container li.active {
     background-color: #CEDD61;
     color: black;
 }
