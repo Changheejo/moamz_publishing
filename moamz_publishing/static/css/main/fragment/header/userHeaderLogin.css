@@ -149,24 +149,27 @@
   top: 60px;
   right: -15px;
   width: 252px;
-  height: 240px;
+  height: 250px;
   background-color: #CEDD61;
   border-radius: 12px;
+  /* display: flex;
+  flex-direction: column;
+  gap:5px; */
 }
 
 /* 알림창 드롭박스 말풍선 */
 .notification-dropdown:after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 90%;
-	width: 0;
-	height: 0;
-	border: 23px solid transparent;
-	border-bottom-color: #CEDD61;
-	border-top: 0;
-	margin-left: -23px;
-	margin-top: -20px;
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 90%;
+   width: 0;
+   height: 0;
+   border: 23px solid transparent;
+   border-bottom-color: #CEDD61;
+   border-top: 0;
+   margin-left: -23px;
+   margin-top: -20px;
 }
 
 .btn-img:hover .notification-dropdown {
@@ -175,14 +178,15 @@
 
 .notification-dropdown-box{
   /* padding: 8px; */
-  margin: 15px 10px 15px 15px;
+  /* margin: 15px 10px 15px 15px; */
   background-color: #ffffff;
   text-align: center;
   cursor: pointer; 
-  width: 220px;
-  height: 62px;
+  width: 250px;
+  height: 80px;
   border-radius: 10px;
   display: flex;
+  margin-bottom: 5px;
 }
 
 .userMypagePurchaseImg{
@@ -191,7 +195,7 @@
 }
 
 .userMypagePurchaseText{
-  width: 160px;
+  width: 200px;
   height: 62px;
 }
 

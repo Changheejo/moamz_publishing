@@ -51,6 +51,7 @@ main{
   border: 2.49px solid #CEDD61;
   color: white;
   background-color: #CEDD61;
+  cursor: pointer;
 }
 
 .noticeList-list-wrap{
