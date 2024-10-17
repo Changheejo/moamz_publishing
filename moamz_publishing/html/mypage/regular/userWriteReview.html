@@ -6,6 +6,7 @@
   <title>userWriteReview</title>
   <link rel="stylesheet" href="../../../static/css/reset2.css">
   <link rel="stylesheet" href="../../../static/css/mypage/regular/userWriteReview.css">
+  <script defer src="../../../static/js/mypage/regular/userWriteReview.js"></script>
 </head>
 <body>
   <header id="header"></header>
@@ -25,11 +26,11 @@
       <form action="">
         <div class="review-write-title">
           <span class="review-write-form-title">별점*</span>
-          <input type="text" placeholder="" required>
+          <input type="number" id="star-rating" min="0" step="1" max="5" placeholder="0~5 사이 정수값으로 입력해주세요." required>
         </div>
         <div class="review-write-title">
           <span class="review-write-form-title">리뷰내용*</span>
-          <input type="text" placeholder="" required>
+          <input type="text" id="review-content" placeholder="" required>
         </div>
         <div class="review-write-btn">
           <button id="cancle-btn" type="button">취소</button>
