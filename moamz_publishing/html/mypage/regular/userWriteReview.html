@@ -13,24 +13,35 @@
   <main>
     <div class="userWriteReview-container">
       <div class="userWriterReview-title">리뷰 작성하기</div>
-      <div class="userWriterReview-info">
-        <span class="info-title">업체명</span>
-        <span>업체명</span>
-      </div>
-      <div class="userWriterReview-info">
-        <span class="info-title">상품명</span>
-        <span>방울토마토 500g</span>
+      <div class="userWriterReview-wrap">
+        <div class="userWriterReview-info">
+          <span class="info-title">업체명</span>
+          <span>업체명</span>
+        </div>
+        <div class="userWriterReview-info">
+          <span class="info-title">상품명</span>
+          <span>방울토마토 500g</span>
+        </div>
       </div>
     </div>
     <div class="review-write-content">
-      <form action="">
+      <form method="post" action="">
         <div class="review-write-title">
+<<<<<<< HEAD
+          <p class="review-write-form-star">📝 별점*</p>
+          <input type="text" required>
+        </div>
+        <div class="review-write-title">
+          <p class="review-write-form-title">📝 리뷰내용*</p>
+          <textarea required></textarea>
+=======
           <span class="review-write-form-title">별점*</span>
           <input type="number" id="star-rating" min="0" step="1" max="5" placeholder="0~5 사이 정수값으로 입력해주세요." required>
         </div>
         <div class="review-write-title">
           <span class="review-write-form-title">리뷰내용*</span>
           <input type="text" id="review-content" placeholder="" required>
+>>>>>>> 919adecfa1bd55981e2fcf2c6f06aba07d020268
         </div>
         <div class="review-write-btn">
           <button id="cancle-btn" type="button">취소</button>

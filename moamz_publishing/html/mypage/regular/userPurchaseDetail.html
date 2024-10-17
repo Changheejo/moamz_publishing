@@ -9,7 +9,7 @@
   
 </head>
 <body>
-  <header></header>
+  <header id="header"></header>
   <main>
     <div class="mypage-list">
       <div class="mypage-user">
@@ -64,10 +64,10 @@
               <a href="userMyPost.html">● MY게시글</a>
             </li>
             <li class="category-list">
-              <a href="userInfoModify.html">● 회원정보변경</a>
+              <a href="userInfoAuth.html">● 회원정보변경</a>
             </li>
             <li class="category-list">
-              <a href="userResetPassword.html">● 비밀번호변경</a>
+              <a href="userInfoAuth.html">● 비밀번호변경</a>
             </li>
             <li class="category-list">
               <a href="userAdminInquiryList.html">● 관리자 문의</a>
@@ -118,7 +118,7 @@
             </div>
           <div class="seller-chat">
             <button type="button" id="seller-chat-btn">💬판매자와 채팅하기</button>
-            <div class="review-write">리뷰 작성하기</div>
+            <div class="review-write" onclick="location.href='userWriteReview.html'">리뷰 작성하기</div>
           </div>
         </div>  
         <div class="purchase-order-box3">
@@ -169,7 +169,14 @@
       </div>
     </div>
   </main>
-  <footer></footer>
+  <footer id="footer"></footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+  $(function () {
+    $("#header").load("../../main/fragment/header/userHeaderLogin.html");
+    $("#footer").load("../../main/fragment/footer/userFooter.html");
+  });
+</script>
 </html>
 

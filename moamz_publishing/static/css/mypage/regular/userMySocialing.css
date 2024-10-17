@@ -1,11 +1,8 @@
-*{
-  color: #6a6a6a;
-}
-
 main{
   width: 1000px;
   display: flex;
   margin: auto;
+  color: #6a6a6a;
 }
 
 .mypage-list{
@@ -200,6 +197,21 @@ a{
 }
 
 .socialing-modify-btn{
+  width: 50px;
+  height: 24px;
+  background-color: #CEDD61;
+  color: #6a6a6a;
+  border-radius: 10px;
+  align-items: center;
+  /* text-align: center; */
+  font-size: 15px;
+  display: flex;
+  padding-left: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.socialing-delete-btn{
   width: 50px;
   height: 24px;
   background-color: #CEDD61;
