@@ -1,13 +1,9 @@
 const emailBtn = document.getElementById("email-btn");
-const nicknameBtn = document.getElementById("nickname-btn");
 
 emailBtn.addEventListener("click", () => {
   alert("이메일 중복 검사");
 });
 
-nicknameBtn.addEventListener("click", () => {
-  alert("닉네임 중복검사");
-});
 
 
 
@@ -187,50 +183,13 @@ $(document).ready(function() {
 
 // 포인트지급하기 버튼에서 적용버튼 누르면 
 // 지급되었다는 알럿뜨고 모달 닫기
-const submitBtn = document.getElementById('subminBtn1');
+const submitBtn = document.getElementById('subminBtn');
 submitBtn.addEventListener('click',(e)=>{
     const modal = document.getElementById('myModal');
     modal.style.display = "none";  // 모달 닫기
 })
 
-// -----------------------------모달2
-
-
-
-
-
-  // 모달 열기 함수
-  function openModal(event) {
-    event.stopPropagation();  // 클릭 이벤트 전파 차단하여 tr 클릭을 방지
-    document.getElementById('myModal2').style.display = "block";  // 모달 열기
-  }
-  
-  // 모달 닫기 함수
-  function closeModal() {
-    document.getElementById('myModal2').style.display = "none";  // 모달 닫기
-  }
-  
-//   // 모달 외부를 클릭하면 닫기
-//   window.onclick = function(event) {
-//     const modal = document.getElementById('myModal');
-//     if (event.target === modal) {
-//       modal.style.display = "none";  // 모달 닫기
-//     }
-//   }
-
-// 포인트지급하기 버튼에서 적용버튼 누르면 
-// 지급되었다는 알럿뜨고 모달 닫기
-const submitBtn2 = document.getElementById('subminBtn');
-submitBtn2.addEventListener('click',(e)=>{
-    const modal = document.getElementById('myModal2');
-    modal.style.display = "none";  // 모달 닫기
-})
-
 // 체크박스 클릭 시 모달 안보이게
 function checkboxClick(event){
-  event.stopPropagation();
-}
-
-function checkboxClick1(event){
   event.stopPropagation();
 }
