@@ -6,10 +6,11 @@
   <title>sellerLogin</title>
   <link rel="stylesheet" href="../../../static/css/user/seller/sellerLogin.css">
   <link rel="stylesheet" href="../../../static/css/reset2.css">
+  <script defer src="../../../static/js/user/seller/sellerLogin.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-
+<header id="header"></header>
   
   <div id="login-user">
 
@@ -44,5 +45,12 @@
     </div>
 
   </div>
+  <footer id="footer"></footer>
 </body>
+<script>
+  $(function() {
+      $("#header").load("../../main/fragment/header/userHeaderLogin.html");
+      $("#footer").load("../../main/fragment/footer/userFooter.html");
+  });
+</script>
 </html>

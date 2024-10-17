@@ -7,8 +7,11 @@
   <link rel="stylesheet" href="../../../static/css/user/regular/userLogin.css">
   <link rel="stylesheet" href="../../../static/css/user/regular/userResetPassword.css">
   <script defer src="../../../static/js/user/regular/userLogin.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
+  <header id="header"></header>
+
   <div id="login-user">
 
     <div id="login-logo_wrap">
@@ -48,12 +51,13 @@
       </div>
     </form>
   </div>
+
+  <footer id="footer"></footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
-  const loginBtn = document.getElementById("login_but");
-  loginBtn.addEventListener("click", () => {
-    alert("아이디X 비밀번호X");
-  })
+  $(function() {
+      $("#header").load("../../main/fragment/header/userHeaderLogin.html");
+      $("#footer").load("../../main/fragment/footer/userFooter.html");
+  });
 </script>
 </html>  
