@@ -1,17 +1,12 @@
-*{
-  color: #6a6a6a;
-}
-
 main{
   width: 1000px;
-  height: 1000px;
   display: flex;
   margin: auto;
+  color: #6a6a6a;
 }
 
 .mypage-list{
   width: 250px;
-  height: 1000px;
   /* border: 1px solid black; */
 }
 
@@ -71,7 +66,6 @@ main{
 /* 마이페이지 메뉴 카테고리 */
 .mypage-side-category{
   width: 220px;
-  height: 100%;
   margin: 20px auto;
 }
 
