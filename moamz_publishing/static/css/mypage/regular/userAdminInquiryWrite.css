@@ -50,7 +50,7 @@ textarea {
     /* 크기 조절 버튼 지우기 */
     resize: none; 
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
 }
 /* 버튼 영역 */
