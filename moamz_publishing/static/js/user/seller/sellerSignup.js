@@ -1,7 +1,7 @@
 const emailBtn = document.getElementById("email-btn");
 
 emailBtn.addEventListener("click", () => {
-  alert("이메일 중복 검사");
+  alert("아이디 중복검사");
 });
 
 

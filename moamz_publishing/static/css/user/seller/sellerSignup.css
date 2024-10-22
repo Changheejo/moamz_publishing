@@ -224,12 +224,14 @@ div.cancle{
   */
   font-size: 12px;
   color: #555;
+  cursor: pointer;
 }
 #info-click{
   font-size: 13px;
   color: #6a6a6a;
   font-weight: bold;
   font-size: 10px;
+  
 }
 
  /* 모달 안의 콘텐츠 */

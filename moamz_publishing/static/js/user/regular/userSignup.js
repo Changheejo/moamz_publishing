@@ -234,3 +234,10 @@ function checkboxClick(event){
 function checkboxClick1(event){
   event.stopPropagation();
 }
+
+const BtnSignup = document.getElementById("signup-btn");
+
+BtnSignup.addEventListener("click", () => {
+  alert("회원가입 완료")
+  location.href="../../../html/main/main/mainPage.html"
+})
