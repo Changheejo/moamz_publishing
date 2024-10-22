@@ -18,31 +18,37 @@
   width: 1000px;
   height: 60px;
   margin: auto;
-  /* border: 1px solid black; */
   display: flex;
-  /* align-items: center; */
+  align-items: center;
 }
 
+/* 로고 */
 .header>img{
-  margin-left:15px;
+  width: 128px;
+  height: 47px;
+  margin-left:10px;
+  cursor: pointer;
 }
 
 .header-search{
   list-style-type: none;
   display: flex;
-  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .header-search>li{
-  margin-left: 20px;
   position: relative;
 }
 
 .header-search>li>a{
+  display: block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size:15px;
+  font-size:18px;
 }
 
 /* 드롭다운 커뮤니티 박스 */
@@ -69,13 +75,16 @@
 
 
 .dropdown-content{
+  padding: 10px 5px;
+  border-radius: 5px;
   display: none;
   position: absolute;
   background-color: #ffffff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  left: 0; 
+  top: 50px;
+  left: 15px; 
 }
 
 .header-search li:hover .dropdown-content{
@@ -105,33 +114,42 @@
   background-color: #f0f0f0;
 }
 
+/* 검색창 */
 .search{
   background-color: white;
-  width: 190px;
+  margin-left: 20px;
+  /* width: 200px; */
   height: 24px;
-  margin-left: 30px;
-  margin-top: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
 }
 
 .search>input{
+  width: 150px;
   border: none;
+  background-color: transparent;
+  padding:5px;
 }
 
-.search>img{
-  margin-left:165px;
+#search-icon{
+  width: 20px;
+  height: 20px;
 }
 
+/* 회원서비스 아이콘 */
 .header-btn{
+  margin-left: auto;
   display: flex;
-  width: 300px;
-  /* border: 1px solid black; */
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .btn-img{
-  margin-left: 30px;
-  margin-top: 15px;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   position: relative;
 }
 
@@ -217,12 +235,13 @@
 }
 
 .login{
-  margin-left: 20px;
-  margin-top: 15px;
+  padding: 0 3px;
+  cursor: pointer;
   color:#A1B60A;
   background-color: white;
   border: none;
   height: 30px;
   font-weight: bold;
   border-radius: 3px;
+  font-size: 13px;
 }
