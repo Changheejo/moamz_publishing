@@ -1,21 +1,14 @@
-*{
-    font-family: "Pretendard Variable";
-    margin: 0;
-    padding: 0;
+main {
     color: #6a6a6a;
-}
-
-body {
     height: 100%;
     background-color: #f7f7f7;
-
 }
 main>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    padding: 30px 0;
 }
 
 /* 채팅방 토글 버튼 */
@@ -62,15 +55,15 @@ main>div {
 .chat-list-hidden {
     display: none;
 }
-ul {
+.chat-list ul {
     list-style: none;
 }
-li {
+.chat-list li {
     border-bottom: 1px solid #dddddd;
     /* margin: 10px 0; */
     padding: 10px 0;
 }
-li:hover {
+.chat-list li:hover {
     background-color: #F8FAE9;
 }
 .chat-room {
